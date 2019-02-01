@@ -1,0 +1,226 @@
+
+/*
+Los siguientes son los estilos de los marcos principales
+del software, incluyendo los responsive...
+*/
+
+
+/* Marco general */
+
+html,body{
+    margin: 0%;
+    height: 100%;
+}
+
+.LimitFrame{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen AND (max-width:899px){
+.header{
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+    top: 0%;
+    /*background: yellow;*/
+    display: flex;
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    
+}
+}
+@media screen AND (min-width:900px){
+.header{
+    width: 100%;
+    height: 8%;
+    min-height: 50px;
+    /*background: yellow;*/
+    display: flex;
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+}
+}
+
+.headerIzq{
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid #ddd; */
+    box-sizing: border-box;
+}
+
+.headerCentro{
+    width: 70%;
+    height: 100%;
+  /*  border: 1px solid #ddd; */
+    box-sizing: border-box;
+}
+
+.headerDer{
+    width: 15%;
+    height: 100%;
+  /*  border: 1px solid #ddd; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen AND (max-width:899px){
+    .menuHamburguesa{
+        display: block;
+        font-size: 20px;
+    }
+}
+@media screen AND (min-width:900px){
+    .menuHamburguesa{
+        display: none;
+    }
+}
+
+
+@media screen AND (max-width:899px){
+.nav{
+    display: block;
+    height: 100%;
+}
+}
+
+@media screen AND (min-width:900px){
+.nav{
+    width: 20%;
+    min-width: 180px;
+    /*background: blue;*/
+    color: #222;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    
+}
+
+#slide-out{
+    width: 100%;
+    min-width: 180px;
+    height: 100%;
+    position: relative;
+    /*background: blue;*/
+    color: #222;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    transform: translateX(0%);
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+}
+
+}
+
+.menuHamburguesa{
+    color: #222;
+}
+
+@media screen AND (max-width:899px){
+.article{
+    width: 96%;
+    height: 80%;
+    margin: auto;
+    /*background: green;*/
+    position: absolute;
+    top: 65px;
+    left: 2%;
+    
+}
+}
+
+@media screen AND (min-width:900px){
+.article{
+    width: 80%;
+    height: 92%;
+    /*background: green;*/
+    
+}
+}
+
+.marcoTitleArticle{
+    width: 98%;
+    height: 10%;
+    margin-left: 1%;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.marcoContainerArticle{
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+}
+
+
+@media screen AND (max-width:899px){
+.footer{
+    display: none;
+}
+}
+
+@media screen AND (min-width:900px){
+.footer{
+    width: 100%;
+    height: 8%;
+    background: orange;
+}
+}
+
+
+
+/* Botones */
+
+/* Botones menu inicio */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 3px;
+  height: 50px;
+  width: 95%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 2.5%;
+  margin-top: 10px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';  /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Botones menu Fin*/
+
+
+
