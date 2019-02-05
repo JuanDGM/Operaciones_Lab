@@ -48,28 +48,61 @@ html,body{
 }
 }
 
+@media screen AND (max-width:899px){
 .headerIzq{
     width: 15%;
     height: 100%;
-    /* border: 1px solid #ddd; */
+    /* border: 1px solid #FFF; */
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerCentro{
     width: 70%;
     height: 100%;
-  /*  border: 1px solid #ddd; */
+    /*border: 1px solid #ddd; */
     box-sizing: border-box;
 }
 
 .headerDer{
     width: 15%;
     height: 100%;
-  /*  border: 1px solid #ddd; */
+    /*border: 1px solid #ddd; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+}
+@media screen AND (min-width:900px){
+.headerIzq{
+    width: 5%;
+    height: 100%;
+    /* border: 1px solid #FFF;*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCentro{
+    width: 75%;
+    height: 100%;
+    /*border: 1px solid #ddd;*/ 
+    box-sizing: border-box;
+}
+
+.headerDer{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid #ddd;*/ 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 
@@ -79,10 +112,18 @@ html,body{
         font-size: 20px;
         
     }
+    .nombreUsuario{
+      display: none;
+      font-size: 20px;
+    }
+    
 }
 @media screen AND (min-width:900px){
     .menuHamburguesa{
         display: none;
+    }
+    .nombreUsuario{
+      display: block;  
     }
 }
 
@@ -166,6 +207,7 @@ html,body{
     width: 98%;
     height: 90%;
     margin-left: 1%;
+    display: none;
 }
 
 
@@ -192,9 +234,12 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-radius: 4px;
-  /*background-color: #f4511e;*/
+  /*background-color: #f4511e;
   background-color: #85929E;
+  background-color: #2874A6;*/
+  background-color: #2471A3;
   border: none;
   color: #FFFFFF;
   font-size: 15px;
@@ -295,6 +340,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     cursor: pointer;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
