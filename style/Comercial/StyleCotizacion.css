@@ -1,6 +1,6 @@
 
-
 @media screen AND (max-width:899px){
+
 .ElaborarCotizacion{
     width: 98%;
     max-width: 500px;
@@ -10,11 +10,6 @@
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
-}
-
-.btn{
-    width: 100%;
-    margin: auto;
 }
 
 .etiquetaAreaLab{
@@ -28,14 +23,12 @@
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
-
 }
 
 @media screen AND (min-width:900px){
 .article{
     margin: auto;
 }
-
 
 .ElaborarCotizacion{
 max-width: 500px;
@@ -59,7 +52,6 @@ border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
-
 }
 
 .marcoContainerArticle{
@@ -81,4 +73,6 @@ thead td{
 
 td{
     padding: 1px !important;
+    display: flex;
+    align-items: center;
 }

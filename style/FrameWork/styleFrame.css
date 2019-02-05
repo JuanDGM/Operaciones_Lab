@@ -24,7 +24,6 @@ html,body{
     width: 100%;
     height: 10%;
     min-height: 50px;
-    top: 0%;
     background: #29385B;
     color: #fff;
     display: flex;
@@ -178,9 +177,9 @@ html,body{
     margin: auto;
     /*background: green;*/
     position: absolute;
-    top: 65px;
+    /*top: 65px;*/
+    top: 10%;
     left: 2%;
-    
 }
 }
 
@@ -188,7 +187,7 @@ html,body{
 .article{
     width: 80%;
     height: 92%;
-    /*background: green;*/
+    /* background: green; */
     
 }
 }
@@ -196,6 +195,7 @@ html,body{
 .marcoTitleArticle{
     width: 98%;
     height: 10%;
+    min-height: 40px;
     margin-left: 1%;
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
@@ -209,6 +209,8 @@ html,body{
     margin-left: 1%;
     display: none;
 }
+
+
 
 
 @media screen AND (max-width:899px){
@@ -357,6 +359,37 @@ html,body{
 
 
 /* Fin botones acceso submodulo */
+
+/* boton generar cotización en modulo comercial */
+
+
+@media screen AND (max-width:899px){
+    .btn{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/* Funcionalidades modulo comercial en vista home.html */
+
+@media screen AND (max-width:899px){
+#elaborarCotizacionId{
+    display: none;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+}
+
+@media screen AND (min-width:900px){
+#elaborarCotizacionId{
+    display: none;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 70px;
+}
+}
 
 
 
