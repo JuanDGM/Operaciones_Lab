@@ -8,9 +8,6 @@
         <link rel="stylesheet" href="../../style/Comercial/StyleCotizacion.css">
         <link rel="stylesheet" href="../../library/fontawesome-free-5.7.0-web/css/all.min.css">
         <link rel="stylesheet" href="../../library/materialize/css/materialize.min.css">
-        <script src="../../library/js/jquery-3.2.1.min.js"></script>
-        <script src="../../library/materialize/js/materialize.min.js"></script>
-        
     </head>
     <body>
         
@@ -44,16 +41,52 @@
                         <div class="marcoRadioButtonInfCliente">
                         <p>
                             <label>
-                              <input class="with-gap" name="group1" type="radio" checked />
+                                <input class="with-gap" name="group1" type="radio" checked onclick="makingQuote_DatosClienteProspecto();"/>
                               <span>Cliente prospecto</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                              <input class="with-gap" name="group1" type="radio"  />
+                                <input class="with-gap" name="group1" type="radio"  onclick="makingQuote_DatosCliente();"/>
                               <span>Cliente</span>
                             </label>
                         </p>
+                        </div>
+                        <div class="marcoInputsInfoClienteProspecto" id="marcoInputsInfoClienteProspectoId">
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">CLIENTE</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">NIT</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">CIUDAD</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">TELEFONO</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">E MAIL</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">CONTACTO</label>
+                            </div>
+                        </div>
+                        <div class="marcoInputsInfoCliente" id="marcoInputsInfoClienteId">
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">CLIENTE</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="nombre cliente">
+                              <label class="active">NIT</label>
+                            </div>
                         </div>
                     </div>
                     
@@ -170,5 +203,8 @@
             </article>
             
         </div>
+        <script src="../../library/js/jquery-3.2.1.min.js"></script>
+        <script src="../../library/materialize/js/materialize.min.js"></script>
+        <script src="../../js/comercial/makingQuote_DatosTipoCliente.js"></script>
     </body>
 </html>

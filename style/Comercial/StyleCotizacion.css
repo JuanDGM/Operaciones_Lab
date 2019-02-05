@@ -61,8 +61,6 @@ border-radius: 5px 5px 5px 5px;
     display: block;
 }
 
-
-
 .marcoInformacionCliente{
     
     width: 100%;
@@ -77,6 +75,20 @@ border-radius: 5px 5px 5px 5px;
 
 .marcoRadioButtonInfCliente{
     display: flex;
+    justify-content: space-around;
+}
+
+.marcoInputsInfoClienteProspecto{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.marcoInputsInfoCliente{
+    padding: 5px;
+    display: none;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
