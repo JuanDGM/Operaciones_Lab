@@ -130,3 +130,18 @@ td{
 .marcoCheckBox{
     margin: 0px;
 }
+
+
+@media screen AND (max-width:899px){
+    .btn{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen AND (min-width:900px){
+    .btn{
+        margin-bottom: 20px;
+    }
+}
