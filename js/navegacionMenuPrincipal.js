@@ -10,6 +10,7 @@ function menuComercial(){
     document.getElementById('menuMatricula').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
+    document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
     document.getElementById('menuFacturacion').style.display = 'none';
     document.getElementById('menuInteligenciaNegocio').style.display = 'none';
     document.getElementById('menuPortalCliente').style.display = 'none';

@@ -1,0 +1,33 @@
+
+
+@media screen AND (max-width:899px){
+.ElaborarCotizacion{
+    width: 98%;
+    display: none;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.btn{
+    width: 100%;
+    margin: auto;
+}
+
+}
+
+@media screen AND (min-width:900px){
+.ElaborarCotizacion{
+    width: 100%;
+    border: 1px solid #ddd;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}

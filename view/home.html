@@ -6,11 +6,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/FrameWork/styleFrame.css">
+        <link rel="stylesheet" href="../style/Comercial/StyleCotizacion.css">
         <link rel="stylesheet" href="../library/fontawesome-free-5.7.0-web/css/all.min.css">
         <link rel="stylesheet" href="../library/materialize/css/materialize.min.css">
         <script src="../library/js/jquery-3.2.1.min.js"></script>
         <script src="../library/materialize/js/materialize.min.js"></script>
         <script src="../js/navegacionMenuPrincipal.js"></script>
+        <script src="../js/comercial/navegacionComercial.js"></script>
         <script>
             
             $(document).ready(function(){
@@ -64,7 +66,7 @@
                     
                 <div class="menuNavegacionModulo">
                     <div class="btnAccesoSubModulo">RESULTADOS COMERCIALES</div>
-                    <div class="btnAccesoSubModulo">COTIZACIONES</div>
+                    <div class="btnAccesoSubModulo" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo">SEGUIMIENTO COTIZACIONES</div>
                     <div class="btnAccesoSubModulo">CREAR PORTAFOLIO</div>
                     <div class="btnAccesoSubModulo">CREAR CLIENTE</div>
@@ -72,6 +74,25 @@
                     <div class="btnAccesoSubModulo">METAS COMERCIALES</div>
                 </div>
                 
+                    
+                    
+                    <!-- Cotización -->
+                    <div class="ElaborarCotizacion" id="elaborarCotizacionId">
+                       
+                            <div class="input-field">
+                                <input type="text" class="validate" placeholder="ingresa el producto del cliente">
+                              <label class="active">MATRIZ</label>
+                            </div>
+                            
+                        <a class="waves-effect waves-light btn">OFERTAR</a>
+                        
+                        
+                        
+                    </div>    
+                    
+                    
+                    
+                    
                 </div>
                 
                 <!-- modulo Recoleccion muestras -->
