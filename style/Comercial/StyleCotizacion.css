@@ -3,6 +3,7 @@
 @media screen AND (max-width:899px){
 .ElaborarCotizacion{
     width: 98%;
+    max-width: 500px;
     display: none;
     margin: auto;
     margin-top: 50px;
@@ -16,18 +17,68 @@
     margin: auto;
 }
 
-}
-
-@media screen AND (min-width:900px){
-.ElaborarCotizacion{
+.etiquetaAreaLab{
     width: 100%;
+    background: #f4f4f4;
     border: 1px solid #ddd;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 10px;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
+
+}
+
+@media screen AND (min-width:900px){
+.article{
+    margin: auto;
+}
+
+
+.ElaborarCotizacion{
+max-width: 500px;
+display: none;
+margin: auto;
+margin-top: 60px;
+margin-bottom: 10px;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.etiquetaAreaLab{
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 12px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+}
+
+.marcoContainerArticle{
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+    display: block;
+}
+
+.tablaAnalisis{
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+thead td{
+   font-weight: bold;
+   text-align: center;
+}
+
+td{
+    padding: 1px !important;
 }
