@@ -92,6 +92,20 @@ border-radius: 5px 5px 5px 5px;
     justify-content: space-around;
 }
 
+@media screen AND (max-width:899px){
+.input-field{
+    width: 45%;
+    max-width: 200px;
+}
+}
+
+@media screen AND (min-width:900px){
+.input-field{
+    width: 45%;
+    max-width: 200px;
+}
+}
+
 .tablaAnalisis{
     width: 100%;
     border: 1px solid #ddd;
