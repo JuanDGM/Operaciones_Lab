@@ -71,8 +71,17 @@ thead td{
    text-align: center;
 }
 
+
+tbody{
+    font-size: 12px;
+}
+
 td{
     padding: 1px !important;
     display: flex;
     align-items: center;
+}
+
+.marcoCheckBox{
+    margin: 0px;
 }
