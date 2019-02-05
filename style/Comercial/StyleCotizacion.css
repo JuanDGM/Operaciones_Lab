@@ -61,6 +61,25 @@ border-radius: 5px 5px 5px 5px;
     display: block;
 }
 
+
+
+.marcoInformacionCliente{
+    
+    width: 100%;
+    padding: 0px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    
+}
+
+.marcoRadioButtonInfCliente{
+    display: flex;
+    justify-content: space-around;
+}
+
 .tablaAnalisis{
     width: 100%;
     border: 1px solid #ddd;
