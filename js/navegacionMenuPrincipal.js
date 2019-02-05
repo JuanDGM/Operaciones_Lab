@@ -9,6 +9,7 @@ function menuComercial(){
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'none';
 }
 
 function menuRecoleccion(){
@@ -20,6 +21,7 @@ function menuRecoleccion(){
     document.getElementById('menuRecoleccion').style.display = 'block';
     document.getElementById('menuMatricula').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'none';
 }
 
 function menuMatricula(){
@@ -31,6 +33,7 @@ function menuMatricula(){
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'block';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'none';
 }
 
 function menuAsignacionTrabajo(){
@@ -42,6 +45,19 @@ function menuAsignacionTrabajo(){
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'block';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'none';
+}
+
+function menuAsignacionTrabajo(){
+    
+    document.getElementById('marcoTitleArticleId').innerHTML = '';
+    document.getElementById('marcoTitleArticleId').innerHTML = 'REGISTRAR ANALISIS';
+    
+    document.getElementById('menuComercial').style.display = 'none';
+    document.getElementById('menuRecoleccion').style.display = 'none';
+    document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAsignacionTrabajo').style.display = 'none';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'block';
 }
 
 
