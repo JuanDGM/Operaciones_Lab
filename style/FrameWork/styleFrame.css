@@ -233,48 +233,14 @@ html,body{
 
 /* Botones menu inicio */
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 4px;
-  /*background-color: #f4511e;
-  background-color: #85929E;
-  background-color: #2874A6;
-  background-color: #2471A3;*/
-  background-color: #5F9EA0;
-  border: none;
-  color: #FFFFFF;
-  font-size: 15px;
-  padding: 3px;
-  height: 50px;
-  width: 95%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-left: 2.5%;
-  margin-top: 10px;
+  font-size: 15px !important;
+  padding: 3px !important;
+  height: 40px !important;
+  width: 95% !important;
+  margin-left: 2.5% !important;
+  margin-top: 10px !important;
 }
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.button span:after {
-  content: '\00bb';  /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.button:hover span {
-  padding-right: 25px;
-}
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+
 
 /* Botones menu Fin*/
 
