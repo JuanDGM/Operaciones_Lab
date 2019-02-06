@@ -145,3 +145,19 @@ td{
         margin-bottom: 20px;
     }
 }
+
+
+
+/* En quotation.html */
+
+@media screen AND (max-width: 899px){
+.codigoCotizacion{
+   margin-left: 30%;
+}
+}
+
+@media screen AND (min-width: 900px){
+.codigoCotizacion{
+   margin-left: 70%;
+}
+}
