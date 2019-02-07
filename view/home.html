@@ -21,10 +21,10 @@
     </head>
     <body>
         
-        <!-- Ventana navegacion modal movil -->
+        <!-- Ventana navegacion modal movil btn hamburguesa-->
       
   
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"></i></a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"></i></a>
         <!-- Fin nav -->
         
         <div class="LimitFrame">
@@ -67,8 +67,8 @@
                     <div class="btnAccesoSubModulo">RESULTADOS COMERCIALES</div>
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo">CREAR PORTAFOLIO</div>
-                    <div class="btnAccesoSubModulo">CREAR CLIENTE</div>
+                    <div class="btnAccesoSubModulo" id="subModuloCrearPortafolio" onclick="crearPortafolio();">CREAR PORTAFOLIO</div>
+                    <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CREAR CLIENTE</div>
                     <div class="btnAccesoSubModulo">CREAR OFERTAS</div>
                     <div class="btnAccesoSubModulo">METAS COMERCIALES</div>
                 </div>
@@ -87,15 +87,14 @@
                     
                     <!--  Seguimiento a contizaciones  -->
                     <div id="containerSeguimientoCotizaciones" style="display: none;">
-                    <table class="highlight">
+                    <table class="highlight" id="tablaSeguimientoCotizaciones">
                         <thead>
                         <tr>
-                            <td style="width: 15%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">CÓDIGO COTIZACIÓN</td>
-                            <td style="width: 30%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">CLIENTE</td>
-                            <td style="width: 20%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">ESPECIALISTA LÍNEA</td>
-                            <td style="width: 15%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">FECHA COTIZACIÓN</td>
-                            <td style="width: 10%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">DIAS TRANSCURRIDOS</td>
-                            <td style="width: 10%;height: 10px;text-align: center;font-size: 10px;font-weight: bold;">FECHA VENCIMIENTO</td>
+                            <td style="width: 15%;text-align: center;font-weight: bold;">CÓDIGO COTIZACIÓN</td>
+                            <td style="width: 30%;text-align: center;font-weight: bold;">CLIENTE</td>
+                            <td style="width: 25%;text-align: center;font-weight: bold;">ESPECIALISTA LÍNEA</td>
+                            <td style="width: 15%;text-align: center;font-weight: bold;">FECHA COTIZACIÓN</td>
+                            <td style="width: 15%;text-align: center;font-weight: bold;">FECHA VENCIMIENTO</td>
                         </tr>  
                         </thead>
                         <tbody>
@@ -104,7 +103,6 @@
                             <td>Harinera del valle</td>
                             <td>Carolina Reyes</td>
                             <td>2019-02-09</td>
-                            <td>4</td>
                             <td>2019-03-09</td>
                         </tr>
                         <tr>   
@@ -112,12 +110,33 @@
                             <td>Colombina</td>
                             <td>Lorena Gomez</td>
                             <td>2019-02-09</td>
-                            <td>4</td>
                             <td>2019-03-09</td>
                         </tr>
                     </tbody>    
                     </table>
                     </div>
+                    
+                    <!--  Crear portafolio de servicios  -->
+                    
+                    <div class="containerCrearPortafolio" id="containerCrearPortafolioId">
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    <!--  Fin Crear portafolio de servicios  -->
+                    
+                    <!-- Crear clientes -->
+                    
+                    <div class="containerCrearClientes" id="containerCrearClientesId">
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    <!-- Fin crear clientes -->
                     
                 </div> <!--  Fin Modulo Comercial -->
                 

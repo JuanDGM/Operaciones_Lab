@@ -340,6 +340,7 @@ html,body{
 
 
 /* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad elaboración de la cotizacion */
 
 @media screen AND (max-width:899px){
 #elaborarCotizacionId{
@@ -357,6 +358,57 @@ html,body{
     margin: auto;
     margin-top: 70px;
 }
+}
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad seguimiento a las cotizaciones */
+
+
+#tablaSeguimientoCotizaciones{
+    height: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+
+@media screen AND (max-width:899px){
+#tablaSeguimientoCotizaciones thead{
+    font-size: 9px;
+}
+}
+
+@media screen AND (min-width:900px){
+#tablaSeguimientoCotizaciones thead{
+    font-size: 12px;
+}
+}
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad crear portafolio */
+
+.containerCrearPortafolio{
+    background: yellow;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+
+
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad crear clientes */
+
+.containerCrearClientes{
+    background: red;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
 }
 
 
