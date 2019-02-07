@@ -251,7 +251,6 @@ html,body{
 .menuNavegacionModulo{
     width: 100%;
     font-size: 10px;
-    margin: auto;
     border: 2px solid #fff;
     display: flex;
     flex-wrap: wrap;
@@ -265,10 +264,10 @@ html,body{
     width: 100%;
     height: 40px;
     font-size: 10px;
-    margin: auto;
     border: 2px solid #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    
     
 }
 }
@@ -288,6 +287,7 @@ html,body{
     box-sizing: border-box;
     text-align: center;
     margin-top: 5px;
+    margin-left: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,6 +304,7 @@ html,body{
     width: 14%;
     padding: 2px;
     height: 100%;
+    margin-left: 4px;
     background: #f4f4f4;
     border-right: 2px solid #757575;
     border-bottom: 2px solid #757575;
@@ -412,4 +413,41 @@ html,body{
 }
 
 
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad crear Ofertas */
 
+.containerCrearOfertas{
+    background: green;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad Metas comerciales */
+
+.containerMetasComerciales{
+    background: blue;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad resultados Comerciales */
+
+.containerResultadosComerciales{
+    background: orange;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
