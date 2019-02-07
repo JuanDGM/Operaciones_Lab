@@ -17,6 +17,12 @@
                 $('.sidenav').sidenav();
               });
             
+            
+             $(document).ready(function(){
+                $('select').formSelect();
+              });
+            
+            
         </script>
     </head>
     <body>
@@ -67,9 +73,9 @@
                     <div class="btnAccesoSubModulo" id="subModuloresultadosComerciales" onclick="resultadosComerciales();">RESULTADOS COMERCIALES</div>
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo" id="subModuloCrearPortafolio" onclick="crearPortafolio();">CREAR PORTAFOLIO</div>
-                    <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CREAR CLIENTE</div>
-                    <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">CREAR OFERTAS</div>
+                    <div class="btnAccesoSubModulo" id="subModuloPortafolio" onclick="crearPortafolio();">PORTAFOLIO</div>
+                    <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
+                    <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">OFERTAS</div>
                     <div class="btnAccesoSubModulo" id="subModuloMetasComerciales" onclick="metasComerciales();">METAS COMERCIALES</div>
                 </div>
                 
@@ -87,28 +93,32 @@
                     <!-- Elaborar Cotización -->
                     <div class="ElaborarCotizacion" id="elaborarCotizacionId">
                             
-                        <div class="containerSeleccionTipoMatriz">
-                              <label>
-                                <input class="with-gap" name="group1" type="radio"  />
-                                <span>Alimentos</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group1" type="radio"  />
-                                <span>Aguas</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group1" type="radio"  />
-                                <span>Farmaceuticos</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group1" type="radio"  />
-                                <span>Cosmeticos</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group1" type="radio"  />
-                                <span>Materias prima</span>
-                              </label>
-                            </div>
+                        <div class="input-field col s12">
+                            <select>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="1">ALIMENTOS</option>
+                              <option value="2">ALIMENTOS PARA ANIMALES</option>
+                              <option value="3">AGUAS</option>
+                              <option value="3">COSMETICOS</option>
+                              <option value="3">ASEO</option>
+                              <option value="3">FARMACOS Y MATERIAS PRIMAS</option>
+                            </select>
+                            <label>SECTOR ECONOMICO</label>
+                        </div>
+                        <br/>
+                        <div class="input-field col s12">
+                            <select>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="1">Productos lacteos</option>
+                              <option value="2">Carnes, pescados y huevos</option>
+                              <option value="3">Legumbres, tuberculos y frutos secos </option>
+                              <option value="3">Verduras y hortalizas</option>
+                              <option value="3">Frutas</option>
+                              <option value="3">Pan, pasta, cereales y azucar</option>
+                              <option value="3">Grasas</option>
+                            </select>
+                            <label>CATEGORIAS</label>
+                        </div>
                         
                             <br/>
                             <div class="input-field">
@@ -152,7 +162,7 @@
                     
                     <!--  Crear portafolio de servicios  -->
                     
-                    <div class="containerCrearPortafolio" id="containerCrearPortafolioId">
+                    <div class="containerPortafolio" id="containerPortafolioId">
                         
                         
                         

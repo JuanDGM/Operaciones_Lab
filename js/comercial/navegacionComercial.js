@@ -23,11 +23,11 @@ function resultadosComerciales(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
@@ -76,11 +76,11 @@ function elaborarCotizacion(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
@@ -127,11 +127,11 @@ function seguimientoCotizaciones(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='0px solid';
 
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
 
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
@@ -179,11 +179,11 @@ function crearPortafolio(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Agregar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='block';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='0px solid';
+    document.getElementById('containerPortafolioId').style.display='block';
+    document.getElementById('subModuloPortafolio').style.borderTop='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderLeft='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderBottom='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderRight='0px solid';
     
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
@@ -231,11 +231,11 @@ function crearClientes(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Agregar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='block';
@@ -282,11 +282,11 @@ function crearOfertas(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
@@ -335,11 +335,11 @@ function metasComerciales(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearPortafolio() (btn submodulo) */
-    document.getElementById('containerCrearPortafolioId').style.display='none';
-    document.getElementById('subModuloCrearPortafolio').style.borderTop='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderLeft='0px solid';
-    document.getElementById('subModuloCrearPortafolio').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloCrearPortafolio').style.borderRight='2px solid #757575';
+    document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
+    document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
     document.getElementById('containerCrearClientesId').style.display='none';
