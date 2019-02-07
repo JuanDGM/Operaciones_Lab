@@ -361,6 +361,13 @@ html,body{
 }
 }
 
+.containerSeleccionTipoMatriz{
+    width: 100%;
+    display: flex;
+}
+
+
+
 /* Funcionalidades modulo comercial en vista home.html */
 /* Funcionalidad seguimiento a las cotizaciones */
 
