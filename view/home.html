@@ -15,14 +15,12 @@
             
             $(document).ready(function(){
                 $('.sidenav').sidenav();
-              });
             
-            
-             $(document).ready(function(){
                 $('select').formSelect();
-              });
             
+                $('.dropdown-trigger').dropdown();
             
+            });
         </script>
     </head>
     <body>
@@ -73,12 +71,18 @@
                     <div class="btnAccesoSubModulo" id="subModuloresultadosComerciales" onclick="resultadosComerciales();">RESULTADOS COMERCIALES</div>
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo" id="subModuloPortafolio" onclick="crearPortafolio();">PORTAFOLIO</div>
+                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="crearPortafolio();">PORTAFOLIO</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">OFERTAS</div>
                     <div class="btnAccesoSubModulo" id="subModuloMetasComerciales" onclick="metasComerciales();">METAS COMERCIALES</div>
                 </div>
                 
+                    <!-- dropdown1 despliegue accion en boton portafolio -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Consultar</a></li>
+                        <li><a href="#!">Crear</a></li>
+                    </ul>
+        
                     <!-- ResultadosComerciales -->
                     
                     <div class="containerResultadosComerciales" id="containerResultadosComercialesId">
