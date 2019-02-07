@@ -25,6 +25,11 @@
                    <textarea id="textarea2" class="materialize-textarea" placeholder="fecha, medio y observaciones"></textarea>
                    <label class="active">CONVERSACIÓN CON EL CLIENTE</label>
                </div>
+               <div class="input-field" style="min-width: 100% !important;">
+                   <input type="text" class="datepicker" placeholder="" style="min-width: 100% !important;">
+                   <label class="active">FECHA SOLICUD RECOLECCIÓN</label>
+               </div>
+               
            </div>
            <div class="modal-footer">
              <a href="#!" class="modal-close waves-effect waves-light btn">APROBAR</a>
@@ -246,6 +251,12 @@
             
             $(document).ready(function(){
                 $('.modal').modal();
+            });
+            
+            
+            /* FECHA SOLICITUD RECOLECCIÓN */
+            $(document).ready(function(){
+                $('.datepicker').datepicker();
             });
             
             /* Menu flotante para aprobar, editar, pdf o enviar cotizacion */
