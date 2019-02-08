@@ -1,4 +1,6 @@
 
+/* este fichero contiene las funciones para realizar 
+ * la navegacion en el modulo de gestión comercial*/
 
 function resultadosComerciales(){
     /* Agregar estilos a funcion elaborarCotizacion() */
@@ -22,8 +24,9 @@ function resultadosComerciales(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -75,8 +78,9 @@ function elaborarCotizacion(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -126,8 +130,9 @@ function seguimientoCotizaciones(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='0px solid';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='0px solid';
 
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -156,7 +161,7 @@ function seguimientoCotizaciones(){
 }
 
 
-function crearPortafolio(){
+function Portafolio(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
     document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
@@ -178,7 +183,7 @@ function crearPortafolio(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Agregar estilos a crearPortafolio() (btn submodulo) */
+    /* Agregar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='block';
     document.getElementById('subModuloPortafolio').style.borderTop='2px solid #757575';
     document.getElementById('subModuloPortafolio').style.borderLeft='2px solid #757575';
@@ -230,8 +235,9 @@ function crearClientes(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -281,8 +287,9 @@ function crearOfertas(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -334,8 +341,9 @@ function metasComerciales(){
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderBottom='2px solid #757575';
     document.getElementById('subModuloSeguimientoCotizaciones').style.borderRight='2px solid #757575';
     
-    /* Quitar estilos a crearPortafolio() (btn submodulo) */
+    /* Quitar estilos a Portafolio() (btn submodulo) */
     document.getElementById('containerPortafolioId').style.display='none';
+    document.getElementById('crearPortafolioId').style.display='none';
     document.getElementById('subModuloPortafolio').style.borderTop='0px solid';
     document.getElementById('subModuloPortafolio').style.borderLeft='0px solid';
     document.getElementById('subModuloPortafolio').style.borderBottom='2px solid #757575';
@@ -361,4 +369,14 @@ function metasComerciales(){
     document.getElementById('subModuloMetasComerciales').style.borderLeft='2px solid #757575';
     document.getElementById('subModuloMetasComerciales').style.borderBottom='0px solid';
     document.getElementById('subModuloMetasComerciales').style.borderRight='0px solid';
+}
+
+
+/* Navegacion en el btn portafolio para consultar o crear portafolio */
+
+
+function crearPortafolio(){
+    
+    document.getElementById('crearPortafolioId').style.display='flex';
+    
 }

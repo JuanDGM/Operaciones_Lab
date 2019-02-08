@@ -7,21 +7,7 @@
         <link rel="stylesheet" href="../style/FrameWork/styleFrame.css">
         <link rel="stylesheet" href="../library/fontawesome-free-5.7.0-web/css/all.min.css">
         <link rel="stylesheet" href="../library/materialize/css/materialize.min.css">
-        <script src="../library/js/jquery-3.2.1.min.js"></script>
-        <script src="../library/materialize/js/materialize.min.js"></script>
-        <script src="../js/navegacionMenuPrincipal.js"></script>
-        <script src="../js/comercial/navegacionComercial.js"></script>
-        <script>
-            
-            $(document).ready(function(){
-                $('.sidenav').sidenav();
-            
-                $('select').formSelect();
-            
-                $('.dropdown-trigger').dropdown();
-            
-            });
-        </script>
+        
     </head>
     <body>
         
@@ -71,17 +57,12 @@
                     <div class="btnAccesoSubModulo" id="subModuloresultadosComerciales" onclick="resultadosComerciales();">RESULTADOS COMERCIALES</div>
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="crearPortafolio();">PORTAFOLIO</div>
+                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="Portafolio();">PORTAFOLIO</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">OFERTAS</div>
                     <div class="btnAccesoSubModulo" id="subModuloMetasComerciales" onclick="metasComerciales();">METAS COMERCIALES</div>
                 </div>
                 
-                    <!-- dropdown1 despliegue accion en boton portafolio -->
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Consultar</a></li>
-                        <li><a href="#!">Crear</a></li>
-                    </ul>
         
                     <!-- ResultadosComerciales -->
                     
@@ -164,12 +145,61 @@
                     </table>
                     </div>
                     
-                    <!--  Crear portafolio de servicios  -->
+                    <!--  portafolio de servicios  -->
+                
+                    <!-- dropdown1 despliegue accion en boton portafolio consultar/ crear-->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#">Consultar</a></li>
+                        <li><a href="#" onclick="crearPortafolio();">Crear</a></li>
+                    </ul>
+                    
                     
                     <div class="containerPortafolio" id="containerPortafolioId">
                         
+                        <!-- Crear portafolio -->
                         
-                        
+                        <div id="crearPortafolioId">
+                            <div id="tituloCrearPortafolioId">
+                                <div>CREAR PORTAFOLIO</div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">SERVICIO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">SECTOR ECONÓMICO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">CATEGORIA</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">MATRIZ</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">NOMBRE ENSAYO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">MÉTODO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">PRECIO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label for="first_name">TIEMPO ENTREGA</label>
+                            </div>
+                            <a href="#" class="waves-effect waves-light btn">CREAR</a>
+                            
+                        </div>
+                        <br/>
                         
                     </div>
                     
@@ -310,5 +340,20 @@
             </article>
             
         </div>
+        <script src="../library/js/jquery-3.2.1.min.js"></script>
+        <script src="../library/materialize/js/materialize.min.js"></script>
+        <script src="../js/navegacionMenuPrincipal.js"></script>
+        <script src="../js/comercial/navegacionComercial.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            
+                $('select').formSelect();
+            
+                $('.dropdown-trigger').dropdown();
+            
+            });
+        </script>
     </body>
 </html>

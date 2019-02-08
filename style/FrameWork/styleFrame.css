@@ -319,6 +319,26 @@ html,body{
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 }
+
+
+@media screen AND (max-width:899px){
+.styloInputGeneral{
+    width: 45%;
+    max-width: 200px;
+    margin-left: 10px;
+}
+}
+
+@media screen AND (min-width:900px){
+.styloInputGeneral{
+    width: 45%;
+    max-width: 200px;
+    margin-left: 20px;
+}
+}
+
+
+
 /*
 .btnAccesoSubModulo:hover{
     border: 1px solid #ddd;
@@ -392,13 +412,31 @@ html,body{
 
 .containerPortafolio{
     width: 100%;
-    height: 90%;
     display: none;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 
+#crearPortafolioId{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#tituloCrearPortafolioId{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
 
 
 
