@@ -248,7 +248,7 @@ function Clientes(){
     /* Agregar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='block';
     document.getElementById('consultarClienteId').style.display='none';
-    document.getElementById('btnConsultarCliente').style.display='none';
+    //document.getElementById('btnConsultarCliente').style.display='none';
     document.getElementById('subModuloCliente').style.borderTop='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderLeft='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderBottom='0px solid';
@@ -411,21 +411,18 @@ function consultarClientes(){
     document.getElementById('ContenedorCrearClienteId').style.display='none';
 }
 
-function eventoDesplegable(session){
-   
+function eventoDesplegable(session,contraer,desplegar){
     $(document).ready(function(){
-        
         var idSession = "#"+session;
-        
         var esVisible = $(idSession).is(":visible");
-        
     if(esVisible){
         document.getElementById(session).style.display='none';
+        document.getElementById(contraer).style.display='initial';
+        document.getElementById(desplegar).style.display='none';
     }else{
         document.getElementById(session).style.display='flex';
-        
+        document.getElementById(contraer).style.display='none';
+        document.getElementById(desplegar).style.display='initial';
     }
     });
-    
-    
 }
