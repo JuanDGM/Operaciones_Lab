@@ -19,7 +19,9 @@
         
         <div class="LimitFrame">
             <header class="header">
-                <div class="headerIzq"></div>
+                <div class="headerIzq">
+                    <span><i class="fas fa-flask"></i>&nbsp;OPERLAB</span>
+                </div>
                 <div class="headerCentro"></div>
                 <div class="headerDer">
                     <a href="#" data-target="slide-out" class="sidenav-trigger menuHamburguesa"><i class="fas fa-bars iconoHambuguesa"></i></a>
@@ -58,7 +60,7 @@
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
                     <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="Portafolio();">PORTAFOLIO</div>
-                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown2' id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
+                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown2' id="subModuloCliente" onclick="Clientes();">CLIENTES</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">OFERTAS</div>
                     <div class="btnAccesoSubModulo" id="subModuloMetasComerciales" onclick="metasComerciales();">METAS COMERCIALES</div>
                 </div>
@@ -179,7 +181,8 @@
                         
                         <!-- Crear portafolio -->
                         
-                        <div id="crearPortafolioId">
+                        <div id="ContenedorCrearPortafolioId">
+                            <div id="crearPortafolioId">
                             <div id="tituloCrearPortafolioId">
                                 <div>CREAR PORTAFOLIO</div>
                             </div>
@@ -217,9 +220,13 @@
                                 <input placeholder="" type="text" class="validate">
                                 <label for="first_name">TIEMPO ENTREGA</label>
                             </div>
-                            <a href="#" class="waves-effect waves-light btn">CREAR</a>
+                        </div> <!-- fin recuadro displey:flex separar input del btn para diseño -->
+                        <a href="#" class="waves-effect waves-light btn" id="btnCrearProductoPortafolio">CREAR</a>
+                            <br/>
                             
-                        </div> <!-- fin crear portafolio -->
+                        </div>
+                        
+                        <!-- fin crear portafolio -->
                         
                         <!-- consultar portafolio -->
                         <div id="consultarPortafolioId">
@@ -298,28 +305,29 @@
                     
                     <!--  Fin Crear portafolio de servicios  -->
                     
-                    <!-- Crear clientes -->
+                    <!-- CLIENTES -->
                     
-                    <div class="containerCrearClientes" id="containerClientesId">
+                    <div class="containerClientes" id="containerClientesId">
                       
                         <!-- dropdown1 despliegue accion en boton clientes consultar/ crear-->
-                        <ul id='dropdown2' class='dropdown-content'>
+                        <ul id="dropdown2" class="dropdown-content">
                            <li><a onclick="consultarClientes();">Consultar</a></li>
                            <li><a onclick="crearClientes();">Crear</a></li>
                         </ul>
-                        <br/>
-                        <div class="containerCliente" id="containerClienteId">
                         
-                        <!-- Crear portafolio -->
+                        <!-- Crear cliente -->
                         
                         <div id="crearClienteId">
                             <div id="tituloCrearClienteId">
                                 <div>CREAR CLIENTE</div>
                             </div>
+                            <br/>
+                            <br/>
+                           
                             
-                        </div> <!-- fin crear portafolio -->
+                        </div> <!-- fin crear crear cliente -->
                         
-                        <!-- consultar portafolio -->
+                        <!-- consultar cliente -->
                         <div id="consultarClienteId">
                             <div id="tituloConsultarClienteId">
                                 <div>CONSULTAR CLIENTE</div>
@@ -331,11 +339,9 @@
                             <br/>
                             
                             
-                        </div> <!-- fin marco fin portafolio -->
+                        </div> <!-- fin marco fin cliente -->
                         
                         <br/>
-                        
-                    </div>
                         
                         
                     </div>
