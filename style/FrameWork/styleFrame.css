@@ -486,7 +486,7 @@ td{
 }
 
 
-#filtrarConsultaPortafolio{
+.filtrarConsultaPortafolio{
     width: 100%;
 }
 
@@ -495,7 +495,7 @@ td{
 /* Funcionalidades modulo comercial en vista home.html */
 /* Funcionalidad crear clientes */
 
-.containerCrearClientes{
+.containerClientes{
     background: red;
     width: 100%;
     height: 90%;
@@ -504,6 +504,68 @@ td{
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
+
+/* Funcionalidades modulo comercial en vista home.html */
+/* Funcionalidad crear portafolio */
+
+.containerCliente{
+    width: 100%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#containerClienteId{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#crearClienteId{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#tituloCrearClienteId{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#consultarClienteId{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#tituloConsultarClienteId{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
 
 
 /* Funcionalidades modulo comercial en vista home.html */

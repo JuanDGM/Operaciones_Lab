@@ -33,7 +33,7 @@ function resultadosComerciales(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -87,7 +87,7 @@ function elaborarCotizacion(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -139,7 +139,7 @@ function seguimientoCotizaciones(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
 
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -191,7 +191,7 @@ function Portafolio(){
     document.getElementById('subModuloPortafolio').style.borderRight='0px solid';
     
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -244,7 +244,7 @@ function crearClientes(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Agregar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='block';
+    document.getElementById('containerClientesId').style.display='block';
     document.getElementById('subModuloCrearCliente').style.borderTop='2px solid #757575';
     document.getElementById('subModuloCrearCliente').style.borderLeft='2px solid #757575';
     document.getElementById('subModuloCrearCliente').style.borderBottom='0px solid';
@@ -296,7 +296,7 @@ function crearOfertas(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -350,7 +350,7 @@ function metasComerciales(){
     document.getElementById('subModuloPortafolio').style.borderRight='2px solid #757575';
     
     /* Quitar estilos a crearClientes() */
-    document.getElementById('containerCrearClientesId').style.display='none';
+    document.getElementById('containerClientesId').style.display='none';
     document.getElementById('subModuloCrearCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCrearCliente').style.borderBottom='2px solid #757575';
@@ -386,4 +386,21 @@ function crearPortafolio(){
 function consultarPortafolio(){
     document.getElementById('consultarPortafolioId').style.display='flex';
     document.getElementById('crearPortafolioId').style.display='none';
+}
+
+
+/* Navegacion en el btn Clientes para consultar o crear portafolio */
+
+
+function crearClientes(){
+    
+    document.getElementById('crearClienteId').style.display='flex';
+    document.getElementById('consultarClienteId').style.display='none';
+}
+
+/* Navegacion en el btn portafolio para consultar portafolio */
+
+function consultarClientes(){
+    document.getElementById('consultarClienteId').style.display='flex';
+    document.getElementById('crearClienteId').style.display='none';
 }

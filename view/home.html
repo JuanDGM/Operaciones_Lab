@@ -58,7 +58,7 @@
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
                     <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="Portafolio();">PORTAFOLIO</div>
-                    <div class="btnAccesoSubModulo" id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
+                    <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown2' id="subModuloCrearCliente" onclick="crearClientes();">CLIENTES</div>
                     <div class="btnAccesoSubModulo" id="subModuloCrearOfertas" onclick="crearOfertas();">OFERTAS</div>
                     <div class="btnAccesoSubModulo" id="subModuloMetasComerciales" onclick="metasComerciales();">METAS COMERCIALES</div>
                 </div>
@@ -116,6 +116,27 @@
                     
                     <!--  Seguimiento a contizaciones  -->
                     <div id="containerSeguimientoCotizaciones" style="display: none;">
+                    <br/>
+                        <ul class="collapsible filtrarConsultaPortafolio">
+                                <li>
+                                    <div class="collapsible-header"><i class="fas fa-search"></i>FILTROS SEGUIMIENTO COTIZACIONES<i class="material-icons"></i></div>
+                                    <div class="collapsible-body">
+                                        <div style="display: flex;">
+                                        <div class="input-field styloInputGeneral">
+                                            <input placeholder="" type="text" class="validate">
+                                            <label for="first_name">MÉTODO</label>
+                                        </div>
+                                        <div class="input-field styloInputGeneral">
+                                            <input placeholder="" type="text" class="validate">
+                                            <label for="first_name">MÉTODO</label>
+                                        </div>
+                                       </div>  
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                    
+                    <br/>
                     <table class="highlight" id="tablaSeguimientoCotizaciones">
                         <thead>
                         <tr>
@@ -207,7 +228,7 @@
                             </div>
                             <br/>
                             
-                            <ul class="collapsible" id="filtrarConsultaPortafolio">
+                            <ul class="collapsible filtrarConsultaPortafolio">
                                 <li>
                                     <div class="collapsible-header"><i class="fas fa-search"></i>FILTROS CONSULTAR PORTAFOLIO<i class="material-icons"></i></div>
                                     <div class="collapsible-body">
@@ -267,7 +288,7 @@
                                             </tbody>
                                           </table>
                             
-                            <!-- FIN POSTAFOLIO -->
+                            <!-- FIN PORTAFOLIO -->
                             
                         </div> <!-- fin marco fin portafolio -->
                         
@@ -279,9 +300,42 @@
                     
                     <!-- Crear clientes -->
                     
-                    <div class="containerCrearClientes" id="containerCrearClientesId">
+                    <div class="containerCrearClientes" id="containerClientesId">
+                      
+                        <!-- dropdown1 despliegue accion en boton clientes consultar/ crear-->
+                        <ul id='dropdown2' class='dropdown-content'>
+                           <li><a onclick="consultarClientes();">Consultar</a></li>
+                           <li><a onclick="crearClientes();">Crear</a></li>
+                        </ul>
+                        <br/>
+                        <div class="containerCliente" id="containerClienteId">
                         
+                        <!-- Crear portafolio -->
                         
+                        <div id="crearClienteId">
+                            <div id="tituloCrearClienteId">
+                                <div>CREAR CLIENTE</div>
+                            </div>
+                            
+                        </div> <!-- fin crear portafolio -->
+                        
+                        <!-- consultar portafolio -->
+                        <div id="consultarClienteId">
+                            <div id="tituloConsultarClienteId">
+                                <div>CONSULTAR CLIENTE</div>
+                            </div>
+                            <br/>
+                            
+                            
+                            <br/>
+                            <br/>
+                            
+                            
+                        </div> <!-- fin marco fin portafolio -->
+                        
+                        <br/>
+                        
+                    </div>
                         
                         
                     </div>
