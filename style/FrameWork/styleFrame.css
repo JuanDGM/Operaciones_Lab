@@ -63,6 +63,9 @@ html,body{
     height: 100%;
     /*border: 1px solid #ddd; */
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerDer{
@@ -73,6 +76,9 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.tituloPrincipalHeader{
+    margin-right: 8%;
 }
 }
 @media screen AND (min-width:900px){
@@ -91,6 +97,10 @@ html,body{
     height: 100%;
     /*border: 1px solid #ddd;*/ 
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .headerDer{
@@ -102,6 +112,11 @@ html,body{
     justify-content: center;
     align-items: center;
 }
+
+.tituloPrincipalHeader{
+    margin-left: 10%;
+}
+
 }
 
 
@@ -644,6 +659,18 @@ td{
 }
 
 
+.etiquetaInformacionAcuerdos{
+    width: 60%;
+    border: 1px solid #ddd;
+    padding: 5px;
+}    
+.respuestaInformacionAcuerdos{
+    width: 40%;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+
 /* Funcionalidades modulo comercial en vista home.html */
 /* Funcionalidad crear Ofertas */
 
@@ -684,6 +711,82 @@ td{
 }
 
 
+/* Funcionalidades modulo comercial en vista home.html */
+/* Acceso portal del cliente */
+
+@media screen AND (max-width:899px){
+.loginEntrarPortal{
+    width: 90%;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+@media screen AND (min-width:900px){
+.loginEntrarPortal{
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
 
 
 
+/* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
+/* Funcionalidad notificacion de solicitudes de recoleccion */
+
+.containerNotificacionRecoleccion{
+    background: orange;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
+/* Funcionalidad registrar solicitudes de recoleccion */
+
+.containerRegistrarSolicitud{
+    background: green;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
+/* Funcionalidad Programar solicitudes de recoleccion */
+
+.containerProgramarRecoleccion{
+    background: yellow;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
+/* Funcionalidad hoja de ruta de recoleccion */
+
+.containerHojaRutaRecoleccion{
+    background: blue;
+    width: 100%;
+    height: 90%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}

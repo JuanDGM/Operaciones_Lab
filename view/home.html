@@ -361,6 +361,38 @@
                             
                         <div class="etiquetaSubtitulos" style="cursor: pointer;" onclick="eventoDesplegable('ContenedorInformacionPuntos','fa-minus_InformacionPuntosId','fa-plus-circle_InformacionPuntosId');"><i class="fas fa-minus" id="fa-minus_InformacionPuntosId"></i><i class="fas fa-plus-circle" id="fa-plus-circle_InformacionPuntosId" style="display: none;"></i>&nbsp;INFORMACIÓN PUNTOS DE RECOLECCIÓN</div>    
                         <div class="contenedorContenidoSubtitulo" id="ContenedorInformacionPuntos">
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>NOMBRE LUGAR</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>PAIS</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>CIUDAD</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>BARRIO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>DIRECCIÓN</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>TELEFONO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>NOMBRE SALE RESULTADO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>PREGUNTAR POR</label>
+                            </div>
                                 
                         </div>    
                             
@@ -371,7 +403,34 @@
                         
                         <div class="etiquetaSubtitulos" style="cursor: pointer;" onclick="eventoDesplegable('ContenedorInformacionAcuerdos','fa-minus_AcuerdosServiciosId','fa-plus-circle_AcuerdosServiciosId');"><i class="fas fa-minus" id="fa-minus_AcuerdosServiciosId"></i><i class="fas fa-plus-circle" id="fa-plus-circle_AcuerdosServiciosId" style="display: none;"></i>&nbsp;CONDICIONES DE SERVICIO ACORDADAS</div>    
                         <div class="contenedorContenidoSubtitulo" id="ContenedorInformacionAcuerdos">
-                                
+                            <div class="etiquetaInformacionAcuerdos">Requiere servicio de recolección</div>    
+                            <div class="respuestaInformacionAcuerdos">
+                                <div class="switch">
+                                    <label>
+                                      Off
+                                      <input type="checkbox">
+                                      <span class="lever"></span>
+                                      On
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="etiquetaInformacionAcuerdos">% descuento servicio de recolección</div>    
+                            <div class="respuestaInformacionAcuerdos">10%</div>
+                            <div class="etiquetaInformacionAcuerdos">Descarte de muestras</div>    
+                            <div class="respuestaInformacionAcuerdos">
+                                <div class="input-field col s12">
+                                    <select>
+                                      <option value="" disabled selected>-- Seleccione --</option>
+                                      <option value="1">Devolver</option>
+                                      <option value="2">Descarte en ruta hospitalaria</option>
+                                    </select>
+                                    <label>DESCARTE</label>
+                                </div>
+                            </div>
+                            <div class="etiquetaInformacionAcuerdos">Descarte de muestras</div>    
+                            <div class="respuestaInformacionAcuerdos"></div>
+                            
+                            
                         </div>    
                         
                         
@@ -422,18 +481,59 @@
                 </div> <!--  Fin Modulo Comercial -->
                 
                 
-                <!-- modulo Recoleccion muestras -->
+                <!-- MODULO RECOLECCION DE MUESTRAS -->
                 
                 <div class="marcoContainerArticle" id="menuRecoleccion">
                     
                 <div class="menuNavegacionModulo">
-                    <div class="btnAccesoSubModulo">NOTIFICACIÓN SOLICITUDES</div>
-                    <div class="btnAccesoSubModulo">REGISTRAR SOLICITUD</div>
-                    <div class="btnAccesoSubModulo">PROGRAMAR RECOLECCIÓN</div>
-                    <div class="btnAccesoSubModulo">HOJA DE RUTA RECOLECCIÓN</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloNotificacionRecoleccionId" onclick="notificacionSolicitudesRecoleccion();">NOTIFICACIÓN SOLICITUDES</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloRegistrarSolicitudRecoleccionId" onclick="RegistrarSolicitudesRecoleccion();">REGISTRAR SOLICITUD</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloProgramarRecoleccion" onclick="ProgramarSolicitudesRecoleccion();">PROGRAMAR RECOLECCIÓN</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloHojaRutaRecoleccion" onclick="ProgramarHojaRutaRecoleccion();">HOJA DE RUTA RECOLECCIÓN</div>
                 </div>
                 
-                </div>
+                    
+                 <!-- notificacion de solicitudes de recoleccion -->
+                    
+                    <div class="containerNotificacionRecoleccion" id="containerNotificacionRecoleccionId">
+                        
+                        
+                    </div>   
+                    
+                 <!-- Fin notificacion de solicitudes de recoleccion -->
+                 
+                 <!-- registrar solicitudes de recoleccion -->
+                    
+                    <div class="containerRegistrarSolicitud" id="containerRegistrarSolicitudId">
+                        
+                        
+                    </div> 
+                 
+                 <!-- Fin registrar solicitudes de recoleccion -->   
+                 
+                 <!-- Programar solicitudes de recoleccion -->
+                    
+                    <div class="containerProgramarRecoleccion" id="containerProgramarRecoleccionId">
+                        
+                        
+                    </div> 
+                 
+                 <!-- Fin Programar solicitudes de recoleccion -->   
+                 
+                 <!-- hoja de ruta de recoleccion -->
+                    
+                    <div class="containerHojaRutaRecoleccion" id="containerHojaRutaRecoleccionId">
+                        
+                        
+                    </div> 
+                 
+                 <!-- Fin hoja de ruta de recoleccion -->   
+                    
+                    
+                    
+                    
+                </div> 
+                <!-- FIN RECOLECCION DE MUESTRAS -->
                 
                 <!-- modulo Matricula de muestras -->
                 
@@ -510,8 +610,19 @@
                 <!-- modulo Portal cliente -->
                 
                 <div class="marcoContainerArticle" id="menuPortalCliente">
-                    
-                
+                    <div class="loginEntrarPortal">  
+                    <div class="input-field styloInputGeneral" style="width: 90%;">
+                        <input placeholder="" type="text" class="validate">
+                        <label>USUARIO</label>
+                    </div>
+                    <div class="input-field styloInputGeneral" style="width: 90%;">
+                        <input placeholder="" type="password" class="validate">
+                        <label>CONTRASEÑA</label>
+                    </div>
+                    <div class="input-field styloInputGeneral" style="width: 100%;">
+                        <a href="../view/portal/costumerPortal.html" class="waves-effect waves-light btn" style="width: 100%;">ENTRAR</a> 
+                    </div>
+                    </div>
                 
                 </div>
                 
@@ -522,6 +633,7 @@
         <script src="../library/materialize/js/materialize.min.js"></script>
         <script src="../js/navegacionMenuPrincipal.js"></script>
         <script src="../js/comercial/navegacionComercial.js"></script>
+        <script src="../js/Recoleccion/navegacionRecoleccion.js"></script>
         <script>
             
             $(document).ready(function(){
