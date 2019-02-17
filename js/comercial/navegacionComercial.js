@@ -192,6 +192,8 @@ function Portafolio(){
     
     /* Quitar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='none';
+    document.getElementById('consultarClienteId').style.display='none';
+    document.getElementById('btnConsultarCliente').style.display='none';
     document.getElementById('subModuloCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCliente').style.borderBottom='2px solid #757575';
@@ -245,7 +247,8 @@ function Clientes(){
     
     /* Agregar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='block';
-    document.getElementById('containerClientesId').style.display='block';
+    document.getElementById('consultarClienteId').style.display='none';
+    document.getElementById('btnConsultarCliente').style.display='none';
     document.getElementById('subModuloCliente').style.borderTop='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderLeft='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderBottom='0px solid';
@@ -298,6 +301,8 @@ function crearOfertas(){
     
     /* Quitar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='none';
+    document.getElementById('consultarClienteId').style.display='none';
+    document.getElementById('btnConsultarCliente').style.display='none';
     document.getElementById('subModuloCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCliente').style.borderBottom='2px solid #757575';
@@ -352,6 +357,8 @@ function metasComerciales(){
     
     /* Quitar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='none';
+    document.getElementById('consultarClienteId').style.display='none';
+    document.getElementById('btnConsultarCliente').style.display='block';
     document.getElementById('subModuloCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCliente').style.borderBottom='2px solid #757575';
@@ -393,7 +400,7 @@ function consultarPortafolio(){
 
 function crearClientes(){
     
-    document.getElementById('crearClienteId').style.display='flex';
+    document.getElementById('ContenedorCrearClienteId').style.display='flex';
     document.getElementById('consultarClienteId').style.display='none';
 }
 
@@ -401,7 +408,7 @@ function crearClientes(){
 
 function consultarClientes(){
     document.getElementById('consultarClienteId').style.display='flex';
-    document.getElementById('crearClienteId').style.display='none';
+    document.getElementById('ContenedorCrearClienteId').style.display='none';
 }
 
 function eventoDesplegable(session){

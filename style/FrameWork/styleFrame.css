@@ -519,13 +519,7 @@ td{
     box-sizing: border-box;
     margin-top: 20px;
 }
-#crearPortafolioId{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;;
-    width: 100%;
-    box-sizing: border-box;
-}
+
 
 #tituloCrearPortafolioId{
     width: 100%;
@@ -568,7 +562,16 @@ td{
     #btnCrearProductoPortafolio{
         margin-left: 20px;
     }
+    
+    #btnConsultarCliente{
+        display: none;
+        width: 130px;
+        margin-left: 20px;
 }
+
+}
+
+
 
 
 
@@ -583,14 +586,22 @@ td{
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 
-
-#crearClienteId{
-    display: block;
+#ContenedorCrearClienteId{
+    display: none;
     flex-wrap: wrap;
     justify-content: flex-start;;
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
+}
+
+
+#crearClienteId{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -613,6 +624,7 @@ td{
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
+    min-height: 100px;
 }
 
 #tituloConsultarClienteId{
@@ -625,6 +637,8 @@ td{
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
 }
+
+  
 
 @media screen AND (min-width:899px){
     #btnCrearCliente{
