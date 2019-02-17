@@ -316,17 +316,55 @@
                         </ul>
                         
                         <!-- Crear cliente -->
+                        
                         <div id="crearClienteId">
-                        <div id="tituloCrearClienteId">
+                        <div id="ClienteId">
+                            <div id="tituloCrearClienteId">
                                 <div>CREAR CLIENTE</div>
                             </div>
                             <br/>
-                        
-                       </div>
+                            <div class="etiquetaSubtitulos" style="cursor: pointer;" onclick="eventoDesplegable('ContenedorInformacionGeneral')"><i class="fas fa-minus"></i><i class="fas fa-plus-circle"></i>&nbsp;INFORMACIÓN GENERAL DEL CLIENTE</div>
+                           <div class="contenedorContenidoSubtitulo" id="ContenedorInformacionGeneral">
+                            <br/>
+                           
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>RAZON SOCIAL</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>NIT</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>PAIS</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>CIUDAD</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>DIRECCIÓN</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>TELEFONO</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>E MAIL</label>
+                            </div>
+                            <div class="input-field styloInputGeneral">
+                                <input placeholder="" type="text" class="validate">
+                                <label>NOMBRE CONTACTO</label>
+                            </div>
                             
-                        <div class="etiquetaSubtitulos" style="cursor: pointer;" onclick="eventoDesplegable('ContenedorInformacionGeneral');"><i class="fas fa-minus"></i><i class="fas fa-plus-circle"></i>&nbsp;INFORMACIÓN GENERAL</div>    
-                        <div class="contenedorContenidoSubtitulo" id="ContenedorInformacionGeneral">
-                                
+                        <div style="width: 100%;margin-bottom: 10px;">
+                            <a href="#" class="waves-effect waves-light btn" id="btnCrearCliente">CREAR</a>    
+                        </div> 
+                        </div> <!-- fin recuadro displey:flex separar input del btn para diseño -->
+                        
                         </div>
                             
                         <div class="etiquetaSubtitulos" style="cursor: pointer;" onclick="eventoDesplegable('ContenedorInformacionPuntos');"><i class="fas fa-minus"></i><i class="fas fa-plus-circle"></i>&nbsp;INFORMACIÓN PUNTOS DE RECOLECCIÓN</div>    

@@ -245,6 +245,7 @@ function Clientes(){
     
     /* Agregar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='block';
+    document.getElementById('containerClientesId').style.display='block';
     document.getElementById('subModuloCliente').style.borderTop='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderLeft='2px solid #757575';
     document.getElementById('subModuloCliente').style.borderBottom='0px solid';
@@ -388,7 +389,7 @@ function consultarPortafolio(){
     document.getElementById('ContenedorCrearPortafolioId').style.display='none';
 }
 
-/* Navegacion en el btn Clientes para consultar o crear portafolio */
+/* Navegacion en el btn Clientes para consultar o crear Cliente */
 
 function crearClientes(){
     
@@ -396,9 +397,28 @@ function crearClientes(){
     document.getElementById('consultarClienteId').style.display='none';
 }
 
-/* Navegacion en el btn portafolio para consultar portafolio */
+/* Navegacion en el btn portafolio para consultar Cliente */
 
 function consultarClientes(){
     document.getElementById('consultarClienteId').style.display='flex';
     document.getElementById('crearClienteId').style.display='none';
+}
+
+function eventoDesplegable(session){
+   
+    $(document).ready(function(){
+        
+        var idSession = "#"+session;
+        
+        var esVisible = $(idSession).is(":visible");
+        
+    if(esVisible){
+        document.getElementById(session).style.display='none';
+    }else{
+        document.getElementById(session).style.display='flex';
+        
+    }
+    });
+    
+    
 }

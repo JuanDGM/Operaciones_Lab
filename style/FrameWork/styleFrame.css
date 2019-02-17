@@ -386,6 +386,73 @@ td{
 }
 
 
+/* nombres categorias ej: Laboratorio microbiología, lab fq, "información del cliente" */
+
+@media screen AND (max-width:900px){
+    .etiquetaSubtitulos{
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+    
+}
+@media screen AND (min-width:900px){
+    .etiquetaSubtitulos{
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+
+/* iconos desplegar contraer */
+    
+.fa-minus{
+    display: initial;
+}
+.fa-plus-circle{
+    display: none !important;
+}
+
+
+/* contenedor despliegue en home.html */
+.contenedorContenidoSubtitulo{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    width: 100%;
+    min-height:100px;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+
+/* -- fin iconos desplegar contraer ..*/
+
+
+
+/* -- fin estilo categorias --*/
+
+/* ESTILOS SUBMODULOS */
+
+
 /* Funcionalidades modulo comercial en vista home.html */
 /* Funcionalidad elaboración de la cotizacion */
 
@@ -516,14 +583,17 @@ td{
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 
+
 #crearClienteId{
-    display: none;
+    display: block;
     flex-wrap: wrap;
     justify-content: flex-start;;
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
 }
+
+
 
 #tituloCrearClienteId{
     width: 100%;
@@ -556,6 +626,11 @@ td{
     box-sizing: border-box;
 }
 
+@media screen AND (min-width:899px){
+    #btnCrearCliente{
+        margin-left: 20px;
+    }
+}
 
 
 /* Funcionalidades modulo comercial en vista home.html */
