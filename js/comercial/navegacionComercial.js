@@ -378,5 +378,12 @@ function metasComerciales(){
 function crearPortafolio(){
     
     document.getElementById('crearPortafolioId').style.display='flex';
-    
+    document.getElementById('consultarPortafolioId').style.display='none';
+}
+
+/* Navegacion en el btn portafolio para consultar portafolio */
+
+function consultarPortafolio(){
+    document.getElementById('consultarPortafolioId').style.display='flex';
+    document.getElementById('crearPortafolioId').style.display='none';
 }

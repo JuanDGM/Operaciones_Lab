@@ -149,8 +149,8 @@
                 
                     <!-- dropdown1 despliegue accion en boton portafolio consultar/ crear-->
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#">Consultar</a></li>
-                        <li><a href="#" onclick="crearPortafolio();">Crear</a></li>
+                        <li><a onclick="consultarPortafolio();">Consultar</a></li>
+                        <li><a onclick="crearPortafolio();">Crear</a></li>
                     </ul>
                     
                     
@@ -198,7 +198,79 @@
                             </div>
                             <a href="#" class="waves-effect waves-light btn">CREAR</a>
                             
-                        </div>
+                        </div> <!-- fin crear portafolio -->
+                        
+                        <!-- consultar portafolio -->
+                        <div id="consultarPortafolioId">
+                            <div id="tituloConsultarPortafolioId">
+                                <div>CONSULTAR PORTAFOLIO</div>
+                            </div>
+                            <br/>
+                            
+                            <ul class="collapsible" id="filtrarConsultaPortafolio">
+                                <li>
+                                    <div class="collapsible-header"><i class="fas fa-search"></i>FILTROS CONSULTAR PORTAFOLIO<i class="material-icons"></i></div>
+                                    <div class="collapsible-body">
+                                        <div style="display: flex;">
+                                        <div class="input-field styloInputGeneral">
+                                            <input placeholder="" type="text" class="validate">
+                                            <label for="first_name">MÉTODO</label>
+                                        </div>
+                                        <div class="input-field styloInputGeneral">
+                                            <input placeholder="" type="text" class="validate">
+                                            <label for="first_name">MÉTODO</label>
+                                        </div>
+                                       </div>  
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                            <br/>
+                            <br/>
+                            
+                            <!-- PORTAFOLIO  -->
+                            
+                            <table class="highlight">
+                                            <thead>
+                                              <tr>
+                                                  <th>NOMBRE ENSAYO</th>
+                                                  <th>MÉTODO</th>
+                                                  <th>TIEMPO ENTREGA</th>
+                                                  <th>NIVEL DE CALIDAD</th>
+                                                  <th>PRECIO</th>
+                                              </tr>
+                                            </thead>
+
+                                            <tbody>
+                                              <tr>
+                                                <td>Coliformes</td>
+                                                <td>ISO 57281</td>
+                                                <td>3 días</td>
+                                                <td>Acreditado</td>
+                                                <td>$ 23.455</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Salmonela</td>
+                                                <td>ISO 1843</td>
+                                                <td>3 días</td>
+                                                <td>Validado</td>
+                                                <td>$ 45.455</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Listeria</td>
+                                                <td>ISO 57281</td>
+                                                <td>3 días</td>
+                                                <td>Control interno</td>
+                                                <td>$ 23.455</td>
+                                              </tr>
+                                              
+                                            </tbody>
+                                          </table>
+                            
+                            <!-- FIN POSTAFOLIO -->
+                            
+                        </div> <!-- fin marco fin portafolio -->
+                        
                         <br/>
                         
                     </div>
@@ -353,6 +425,7 @@
             
                 $('.dropdown-trigger').dropdown();
             
+                $('.collapsible').collapsible();
             });
         </script>
     </body>

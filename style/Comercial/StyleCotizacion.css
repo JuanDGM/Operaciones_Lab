@@ -97,25 +97,6 @@ border-radius: 5px 5px 5px 5px;
     border: 1px solid #ddd;
 }
 
-thead td{
-   font-weight: bold;
-   text-align: center;
-}
-
-
-tbody{
-    font-size: 12px;
-}
-
-td{
-    padding: 1px !important;
-    display: flex;
-    align-items: center;
-}
-
-.marcoCheckBox{
-    margin: 0px;
-}
 
 
 @media screen AND (max-width:899px){
