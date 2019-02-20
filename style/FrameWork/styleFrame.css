@@ -760,7 +760,7 @@ td{
     width: 100%;
     border: 1px solid #ddd;
     box-sizing: border-box;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
@@ -835,7 +835,6 @@ td{
 .datosOcultarSolicitudRecoleccion{
   display: none;   
 }
-
 
 /* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
 /* Funcionalidad registrar solicitudes de recoleccion */
