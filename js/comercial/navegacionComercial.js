@@ -193,7 +193,7 @@ function Portafolio(){
     /* Quitar estilos a Clientes() */
     document.getElementById('containerClientesId').style.display='none';
     document.getElementById('consultarClienteId').style.display='none';
-    document.getElementById('btnConsultarCliente').style.display='none';
+    //document.getElementById('btnConsultarCliente').style.display='none';
     document.getElementById('subModuloCliente').style.borderTop='0px solid';
     document.getElementById('subModuloCliente').style.borderLeft='0px solid';
     document.getElementById('subModuloCliente').style.borderBottom='2px solid #757575';

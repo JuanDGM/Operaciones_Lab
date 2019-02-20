@@ -261,12 +261,20 @@ html,body{
 
 /* Tablas de la app */
 
+@media screen AND (max-width:899px){
+thead td{
+   font-weight: bold;
+   text-align: center;
+   font-size: 10px;
+}
+}
 
+@media screen AND (min-width:900px){
 thead td{
    font-weight: bold;
    text-align: center;
 }
-
+}
 
 tbody{
     font-size: 12px;
@@ -743,14 +751,48 @@ td{
 /* Funcionalidad notificacion de solicitudes de recoleccion */
 
 .containerNotificacionRecoleccion{
-    background: orange;
     width: 100%;
-    height: 90%;
     display: none;
+}
+
+
+.rowSolicitudRecoleccion{
+    width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
 }
+
+.datosDelClienteSolicitudRecoleccion{
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100% !important;
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+}
+
+.controladoresSolicitudRecoleccion{
+    width: 20%;
+    padding: 5px;
+    height: 100% !important;
+    display: flex;
+    flex-wrap:wrap;
+    border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+}
+
 
 /* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
 /* Funcionalidad registrar solicitudes de recoleccion */
