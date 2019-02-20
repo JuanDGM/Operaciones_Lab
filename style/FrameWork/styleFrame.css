@@ -763,12 +763,11 @@ td{
     margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+    
 }
 
 @media screen AND (max-width:899px){
@@ -831,6 +830,10 @@ td{
         font-size: 9px;
         text-align: center;
     }
+}
+
+.datosOcultarSolicitudRecoleccion{
+  display: none;   
 }
 
 

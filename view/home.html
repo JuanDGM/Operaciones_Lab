@@ -498,51 +498,21 @@
                     <div class="containerNotificacionRecoleccion" id="containerNotificacionRecoleccionId">
                         <br/>    
                         <br/>    
-                        <div class="rowSolicitudRecoleccion">
+                        <div class="rowSolicitudRecoleccion" ondblclick="desplegarSolicitudRecoleccion(1)">
                             <div class="datosDelClienteSolicitudRecoleccion">
                                 <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Pollos Bucaneros</div>
-                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Planta Caloto</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Dirección</div>
-                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">Telefono</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Contacto</div>
+                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Planta Caloto</div>
                                 <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">2019-02-28</div>
+                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;" class="datosOcultarSolicitudRecoleccion" id="DireccionOcultar1">Dirección</div>
+                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;" class="datosOcultarSolicitudRecoleccion" id="TelefonoOcultar1">Telefono</div>
+                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;" class="datosOcultarSolicitudRecoleccion" id="ContactoOcultar1">Contacto</div>
+                                
                             </div>
                             <div class="controladoresSolicitudRecoleccion">
-                                <div style="width: 100%;margin-bottom: 10px;"><a style="width: 100%;" class="waves-effect waves-light btn" id="aprobarSolicitudRecoleccion">Aprobar</a></div>
-                                <div style="width: 100%;"><a style="width: 100%;" class="waves-effect waves-light btn" id="ReprogramarSolicitudRecoleccion">Reprogramar</a></div>
+                                <div style="width: 50%;"><a style="width: 50%;" class="waves-effect waves-light btn" id="aprobarSolicitudRecoleccion" title="aprobar"><i class="fas fa-check-circle"></i></a></div>
+                                <div style="width: 50%;"><a style="width: 50%;" class="waves-effect waves-light btn" id="ReprogramarSolicitudRecoleccion" title="reprogramar"><i class="fas fa-calendar-alt"></i></a></div>
                             </div>
                         </div>
-                        <div class="rowSolicitudRecoleccion">
-                            <div class="datosDelClienteSolicitudRecoleccion">
-                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Pollos Bucaneros</div>
-                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Planta Caloto</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Dirección</div>
-                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">Telefono</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Contacto</div>
-                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">2019-02-28</div>
-                            </div>
-                            <div class="controladoresSolicitudRecoleccion">
-                                <div style="width: 100%;margin-bottom: 10px;"><a style="width: 100%;" class="waves-effect waves-light btn" id="aprobarSolicitudRecoleccion">Aprobar</a></div>
-                                <div style="width: 100%;"><a style="width: 100%;" class="waves-effect waves-light btn" id="ReprogramarSolicitudRecoleccion">Reprogramar</a></div>
-                            </div>
-                        </div>
-                        <div class="rowSolicitudRecoleccion">
-                            <div class="datosDelClienteSolicitudRecoleccion">
-                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Pollos Bucaneros</div>
-                                <div style="width: 100%;border: 1px solid #ddd;padding: 3px;">Planta Caloto</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Dirección</div>
-                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">Telefono</div>
-                                <div style="width: 60%;border: 1px solid #ddd;padding: 3px;">Contacto</div>
-                                <div style="width: 40%;border: 1px solid #ddd;padding: 3px;">2019-02-28</div>
-                            </div>
-                            <div class="controladoresSolicitudRecoleccion">
-                                <div style="width: 100%;margin-bottom: 10px;"><a style="width: 100%;" class="waves-effect waves-light btn" id="aprobarSolicitudRecoleccion">Aprobar</a></div>
-                                <div style="width: 100%;"><a style="width: 100%;" class="waves-effect waves-light btn" id="ReprogramarSolicitudRecoleccion">Reprogramar</a></div>
-                            </div>
-                        </div>
-                        
-                       
-                        
                         
                     </div>   
                     
@@ -680,6 +650,7 @@
         <script src="../js/navegacionMenuPrincipal.js"></script>
         <script src="../js/comercial/navegacionComercial.js"></script>
         <script src="../js/Recoleccion/navegacionRecoleccion.js"></script>
+        <script src="../js/Recoleccion/desplegarSolicitudRecoleccion.js"></script>
         <script>
             
             $(document).ready(function(){
