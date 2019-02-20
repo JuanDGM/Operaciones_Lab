@@ -767,7 +767,6 @@ td{
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
-    
 }
 
 @media screen AND (max-width:899px){
@@ -840,14 +839,37 @@ td{
 /* Funcionalidad registrar solicitudes de recoleccion */
 
 .containerRegistrarSolicitud{
-    background: green;
     width: 100%;
-    height: 90%;
     display: none;
+}
+
+.marcoRegistrarSolicitudRecoleccion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
+
+.rowRegistrarEnLugarRecoleccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    
+    
+}
+
 
 /* Funcionalidades MODULO RECOLECCION DE MUESTRAS en vista home.html */
 /* Funcionalidad Programar solicitudes de recoleccion */
