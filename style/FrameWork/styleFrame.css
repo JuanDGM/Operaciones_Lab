@@ -855,19 +855,128 @@ td{
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 
-.rowRegistrarEnLugarRecoleccion{
+@media screen AND (max-width:899px){
+.rowRegistrarEnLugarRecoleccionMovil{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
     width: 100%;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     box-sizing: border-box;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.rowRegistrarEnLugarRecoleccionOrdenador{
+    display: none;
+}
+
+}
+
+@media screen AND (min-width:900px){
+.rowRegistrarEnLugarRecoleccionMovil{
+    display: none;
+}
     
+.rowRegistrarEnLugarRecoleccionOrdenador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    }
+
+
+
+
+}
+
+#rowMovilVisibleLugarRecoleccion{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+
+
+#rowRegistrarLugarRecoleccionOculta{
+ display: flex;   
     
+}
+
+
+@media screen AND (max-width:899px){
+.campoTitleLugarRecoleccion{
+    display: none;
+    background: #f4f4f4;
+    color: #333;
+    width: 25%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+}
+}
+@media screen AND (min-width:900px){
+.campoTitleLugarRecoleccion{
+    display: block;
+    background: #f4f4f4;
+    color: #333;
+    width: 12.5%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+}
+}
+
+@media screen AND (max-width:899px){  
+.campoLugarRecoleccionDisabled{
+    display: block;
+    width: 33.34%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+}
+}
+
+@media screen AND (min-width:900px){  
+.campoLugarRecoleccionDisabled{
+    display: block;
+    width: 12.5%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+}
+}
+
+
+.campoLugarRecoleccion{
+    display: none;
+    width: 12.5%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
 }
 
 
