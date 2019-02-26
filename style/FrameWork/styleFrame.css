@@ -526,6 +526,8 @@ td{
 }
 
 .marcoContenidoPanelDashboard{
+    display: flex;
+    flex-wrap: wrap;
     width: 94%;
     height: 76%;
     margin: auto;
@@ -533,15 +535,51 @@ td{
     border: 1px solid #ddd;
     box-sizing: border-box;
     background: #fff;
+    font-size: 10px;
     border-radius: 0px 0px 5px 5px;
     -moz-border-radius: 0px 0px 5px 5px;
     -webkit-border-radius: 0px 0px 5px 5px;
 }
 
+@media screen AND (max-width:899px){
+.marcoEtiquetaPanelDashboard{
+    width: 70%;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.marcoResultadoPanelDashboard{
+    width: 30%;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media screen AND (min-width:900px){
+.marcoEtiquetaPanelDashboard{
+    width: 60%;
+    border-bottom: 1px solid #ddd;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.marcoResultadoPanelDashboard{
+    width: 40%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
 
 /* fin DASHBOARD: panel de control */
-
-
 
 
 /* Funcionalidades modulo comercial en vista home.html */
@@ -553,6 +591,7 @@ td{
     max-width: 500px;
     margin: auto;
     margin-top: 40px;
+    padding: 4px;
 }
 }
 
