@@ -28,6 +28,7 @@
                     
                     
                     
+                    <a class="waves-effect waves-light btn button sidenav-close" onclick="menuDashBoard();">PANEL DEL CONTROL</a>
                     <a class="waves-effect waves-light btn button sidenav-close" onclick="menuComercial();">COMERCIAL</a>
                     <a class="waves-effect waves-light btn button sidenav-close" onclick="menuRecoleccion();">RECOLECCIÓN DE MUESTRAS</a>
                     <a class="waves-effect waves-light btn button sidenav-close" onclick="menuMatricula();">MATRICULA DE MUESTRAS</a>
@@ -46,6 +47,34 @@
                 <div class="marcoTitleArticle" id="marcoTitleArticleId">
                     <div class="titleMenuSeleccionado"></div>
                 </div>
+                
+                <!-- modulo Gestión comercial -->
+                
+                <div class="marcoContainerArticle" id="MarcoDisplayDashBoard">
+                
+                    <div class="marcoPanel">
+                        <div class="marcoTituloPanelDashboard">COMERCIAL</div>
+                        <div class="marcoContenidoPanelDashboard"></div>
+                    </div> 
+                    <div class="marcoPanel">
+                        <div class="marcoTituloPanelDashboard">RECOLECCIÓN</div>
+                        <div class="marcoContenidoPanelDashboard"></div>
+                    </div> 
+                    <div class="marcoPanel">
+                        <div class="marcoTituloPanelDashboard">MATRICULA</div>
+                        <div class="marcoContenidoPanelDashboard"></div>
+                    </div> 
+                    <div class="marcoPanel">
+                        <div class="marcoTituloPanelDashboard">ALISTAMIENTO</div>
+                        <div class="marcoContenidoPanelDashboard"></div>
+                    </div> 
+                    <div class="marcoPanel">
+                        <div class="marcoTituloPanelDashboard">ANALISIS</div>
+                        <div class="marcoContenidoPanelDashboard"></div>
+                    </div> 
+                    
+                </div>
+                
                 
                 <!-- modulo Gestión comercial -->
                 
@@ -946,7 +975,12 @@
                 $('.dropdown-trigger').dropdown();
             
                 $('.collapsible').collapsible();
+                
             });
+            
+            
+                /*  FN inicializar modulo dashboard panel de control */
+                menuDashBoard();
         </script>
     </body>
 </html>

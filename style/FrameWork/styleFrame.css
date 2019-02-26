@@ -472,6 +472,78 @@ td{
 /* ESTILOS SUBMODULOS */
 
 
+/* DASHBOARD: panel de control */
+
+
+#MarcoDisplayDashBoard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen AND (max-width:899px){
+.marcoPanel{
+    width: 98%;
+    height: 75%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: #f4f4f4;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+
+@media screen AND (min-width:900px){
+.marcoPanel{
+    width: 18%;
+    height: 230px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 70px;
+    background: #f4f4f4;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+
+
+.marcoTituloPanelDashboard{
+    width: 94%;
+    height: 15%;
+    margin: auto;
+    margin-top: 3%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.marcoContenidoPanelDashboard{
+    width: 94%;
+    height: 76%;
+    margin: auto;
+    margin-top: 3%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+}
+
+
+/* fin DASHBOARD: panel de control */
+
+
+
+
 /* Funcionalidades modulo comercial en vista home.html */
 /* Funcionalidad elaboración de la cotizacion */
 
