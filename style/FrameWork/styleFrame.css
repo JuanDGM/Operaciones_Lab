@@ -893,13 +893,14 @@ td{
     }
 }
 
-#rowMovilVisibleLugarRecoleccion{
+.rowMovilVisibleLugarRecoleccion{
     display: flex;
     width: 100%;
     border: 1px solid #ddd;
     box-sizing: border-box;
     padding: 3px;
     background: #f4f4f4;
+    margin-top: 5px;
     cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
@@ -911,7 +912,8 @@ td{
  width: 100%;
  flex-wrap: wrap;
  border: 1px solid #ddd;
- box-sizing: border-box;   
+ box-sizing: border-box;
+ 
 }
 
 
