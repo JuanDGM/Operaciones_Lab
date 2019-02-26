@@ -2,7 +2,7 @@
 function misServiciosMatricula(){
     
      /* Agregar estilos a funcion notificacionmisServicios() */
-    document.getElementById('marcoMisServiciosModuloMatricula').style.display='block';
+    document.getElementById('marcoMisServiciosModuloMatricula').style.display='flex';
     document.getElementById('btnAccesoSubModuloMisServiciosMatriculaId').style.borderTop='2px solid #757575';
     document.getElementById('btnAccesoSubModuloMisServiciosMatriculaId').style.borderLeft='2px solid #757575';
     document.getElementById('btnAccesoSubModuloMisServiciosMatriculaId').style.borderBottom='0px solid';

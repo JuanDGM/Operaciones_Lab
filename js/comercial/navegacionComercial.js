@@ -2,13 +2,13 @@
 /* este fichero contiene las funciones para realizar 
  * la navegacion en el modulo de gestión comercial*/
 
-function resultadosComerciales(){
+function PlanVistiasComerciales(){
     /* Agregar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='block';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='0px solid';
     
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';
@@ -59,10 +59,10 @@ function resultadosComerciales(){
 function elaborarCotizacion(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* Agregar estilos a funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='block';
@@ -111,10 +111,10 @@ function elaborarCotizacion(){
 function seguimientoCotizaciones(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* quitar estilos de selección de funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';
@@ -164,10 +164,10 @@ function seguimientoCotizaciones(){
 function Portafolio(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* quitar estilos de selección de funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';
@@ -218,10 +218,10 @@ function Portafolio(){
 function Clientes(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* quitar estilos de selección de funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';
@@ -272,10 +272,10 @@ function Clientes(){
 function crearOfertas(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* quitar estilos de selección de funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';
@@ -327,10 +327,10 @@ function crearOfertas(){
 function metasComerciales(){
     /* Quitar estilos a funcion elaborarCotizacion() */
     document.getElementById('containerResultadosComercialesId').style.display='none';
-    document.getElementById('subModuloresultadosComerciales').style.borderTop='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderLeft='0px solid';
-    document.getElementById('subModuloresultadosComerciales').style.borderBottom='2px solid #757575';
-    document.getElementById('subModuloresultadosComerciales').style.borderRight='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderTop='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderLeft='0px solid';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderBottom='2px solid #757575';
+    document.getElementById('subModuloPlanVisitasComerciales').style.borderRight='2px solid #757575';
     
     /* quitar estilos de selección de funcion elaborarCotizacion() */
     document.getElementById('elaborarCotizacionId').style.display='none';

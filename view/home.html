@@ -53,7 +53,7 @@
                 <div class="marcoContainerArticle" id="MarcoDisplayDashBoard">
                 
                     <div class="marcoPanel">
-                        <div class="marcoTituloPanelDashboard">COMERCIAL&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i></div>
+                        <div class="marcoTituloPanelDashboard">COMERCIAL&nbsp;<i class="fas fa-tachometer-alt" style="color: orange;"></i>&nbsp;<span>89%</span></div>
                         <div class="marcoContenidoPanelDashboard">
                             <div class="marcoEtiquetaPanelDashboard">Total ventas</div> 
                             <div class="marcoResultadoPanelDashboard">$456.323.433</div> 
@@ -69,7 +69,7 @@
                         </div>
                     </div> 
                     <div class="marcoPanel">
-                        <div class="marcoTituloPanelDashboard">RECOLECCIÓN&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i></div>
+                        <div class="marcoTituloPanelDashboard">RECOLECCIÓN&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i>&nbsp;<span>99%</span></div>
                         <div class="marcoContenidoPanelDashboard">
                             <div class="marcoEtiquetaPanelDashboard">% cumplimiento recolección</div> 
                             <div class="marcoResultadoPanelDashboard">102%</div> 
@@ -83,7 +83,7 @@
                         </div>
                     </div> 
                     <div class="marcoPanel">
-                        <div class="marcoTituloPanelDashboard">MATRICULA&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i></div>
+                        <div class="marcoTituloPanelDashboard">MATRICULA&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i>&nbsp;<span>97%</span></div>
                         <div class="marcoContenidoPanelDashboard">
                             <div class="marcoEtiquetaPanelDashboard">Total ventas</div> 
                             <div class="marcoResultadoPanelDashboard">$456.323.433</div> 
@@ -98,7 +98,7 @@
                         </div>
                     </div> 
                     <div class="marcoPanel">
-                        <div class="marcoTituloPanelDashboard">ALISTAMIENTO&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i></div>
+                        <div class="marcoTituloPanelDashboard">ALISTAMIENTO&nbsp;<i class="fas fa-tachometer-alt" style="color: red;"></i>&nbsp;<span>77%</span></div>
                         <div class="marcoContenidoPanelDashboard">
                             <div class="marcoEtiquetaPanelDashboard">Total ventas</div> 
                             <div class="marcoResultadoPanelDashboard">$456.323.433</div> 
@@ -113,7 +113,7 @@
                         </div>
                     </div> 
                     <div class="marcoPanel">
-                        <div class="marcoTituloPanelDashboard">ANALISIS&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i></div>
+                        <div class="marcoTituloPanelDashboard">ANALISIS&nbsp;<i class="fas fa-tachometer-alt" style="color: #009688;"></i>&nbsp;<span>99%</span></div>
                         <div class="marcoContenidoPanelDashboard">
                             <div class="marcoEtiquetaPanelDashboard">Total ventas</div> 
                             <div class="marcoResultadoPanelDashboard">$456.323.433</div> 
@@ -127,6 +127,15 @@
                             <div class="marcoResultadoPanelDashboard">53</div>
                         </div>
                     </div> 
+                    
+                    <div class="switch">
+                        <label>
+                          Vista tablas
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                          vista grafico indicador
+                        </label>
+                    </div>
                     
                 </div>
                 
@@ -136,7 +145,7 @@
                 <div class="marcoContainerArticle" id="menuComercial">
                     
                 <div class="menuNavegacionModulo">
-                    <div class="btnAccesoSubModulo" id="subModuloresultadosComerciales" onclick="resultadosComerciales();">RESULTADOS COMERCIALES</div>
+                    <div class="btnAccesoSubModulo" id="subModuloPlanVisitasComerciales" onclick="PlanVistiasComerciales();">PLAN VISITAS COMERCIALES</div>
                     <div class="btnAccesoSubModulo" id="subModuloElaborarCotizacion" onclick="elaborarCotizacion();">COTIZACIONES</div>
                     <div class="btnAccesoSubModulo" id="subModuloSeguimientoCotizaciones" onclick="seguimientoCotizaciones();">SEGUIMIENTO COTIZACIONES</div>
                     <div class="btnAccesoSubModulo dropdown-trigger" data-target='dropdown1' id="subModuloPortafolio" onclick="Portafolio();">PORTAFOLIO</div>
@@ -881,39 +890,90 @@
                         <label>RAZON SOCIAL</label>
                     </div>
                     <div class="input-field styloInputGeneral">
-                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <input placeholder="" type="text" class="validate" value="Nit. 23423423-2"/>
                         <label>NIT</label>
                     </div>
                     <div class="input-field styloInputGeneral">
-                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <input placeholder="" type="text" class="validate" value="Ana Villa"/>
                         <label>NOMBRE CONTACTO</label>
                     </div>
                     <div class="input-field styloInputGeneral">
-                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <input placeholder="" type="text" class="validate" value="4-233-343"/>
                         <label>TELEFONO</label>
                     </div>
                     
                 </div> 
+                <br/>
+                <div style="font-size: 12px;">REGISTRAR SOLICITUD</div>
+                <br/>
                 <div class="menuNavegacionModulo">
-                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisServiciosMatriculaId" onclick="misServiciosMatricula();">MIS SERVICIOS</div>
-                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisCotizacionesMatriculaId" onclick="misCotizacionesMatricula();">MIS COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloNuevoServicioMatriculaId" onclick="nuevoServicioMatricula();">NUEVO SERVICIO</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisServiciosMatriculaId" onclick="misServiciosMatricula();">ASOCIAR SOLICITUD DEL CLIENTE</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisCotizacionesMatriculaId" onclick="misCotizacionesMatricula();">APROBAR UNA COTIZACION</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloNuevoServicioMatriculaId" onclick="nuevoServicioMatricula();">REGISTRAR NUEVO SERVICIO</div>
                 </div>
                     
                 <div class="marcoServiciosRequeridosMatricula" id="marcoMisServiciosModuloMatricula">
                     
-                </div>    
+                    <div id="marcoServicios">
+                    <!-- inicio recuadro servicio -->
+                    <div class="servicioAprobadoXCliente">
+                        <div class="infoClienteServicioAprobado">
+                            <p><small>N° SERVICIO:</small>&nbsp;<strong>23</strong></p>
+                            <p><small>NOMBRE MATRIZ:</small>&nbsp;<strong>HARINA</strong></p>
+                            <p><small>FECHA APROBADO:</small>&nbsp;<strong> 2019-02-26</strong></p>
+                            <p><small>APROBADO POR:</small>&nbsp;<strong> Juan David García</strong></p>
+                            
+                        </div>
+                        <div class="ControlesMatriculaServicioAprobado">
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: #9ccc65;text-align: center;"><a href="../view/comercial/serviceRequest.html">Ver servicio</a></div>
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: tomato;text-align: center;"><a href="">Eliminar servicio</a></div>
+                        </div>
+                    </div> 
+                    <!-- Fin recuadro servicio --> 
+                    
+                    <!-- inicio recuadro servicio -->
+                    <div class="servicioAprobadoXCliente">
+                        <div class="infoClienteServicioAprobado">
+                            <p><small>N° SERVICIO:</small>&nbsp;<strong>23</strong></p>
+                            <p><small>NOMBRE MATRIZ:</small>&nbsp;<strong>HARINA</strong></p>
+                            <p><small>FECHA APROBADO:</small>&nbsp;<strong> 2019-02-26</strong></p>
+                            <p><small>APROBADO POR:</small>&nbsp;<strong> Juan David García</strong></p>
+                            
+                        </div>
+                        <div class="ControlesMatriculaServicioAprobado">
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: #9ccc65;text-align: center;"><a href="../view/comercial/serviceRequest.html">Ver servicio</a></div>
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: tomato;text-align: center;"><a href="">Eliminar servicio</a></div>
+                        </div>
+                    </div> 
+                    <!-- Fin recuadro servicio --> 
+                    
+                    <!-- inicio recuadro servicio -->
+                    <div class="servicioAprobadoXCliente">
+                        <div class="infoClienteServicioAprobado">
+                            <p><small>N° SERVICIO:</small>&nbsp;<strong>23</strong></p>
+                            <p><small>NOMBRE MATRIZ:</small>&nbsp;<strong>HARINA</strong></p>
+                            <p><small>FECHA APROBADO:</small>&nbsp;<strong> 2019-02-26</strong></p>
+                            <p><small>APROBADO POR:</small>&nbsp;<strong> Juan David García</strong></p>
+                            
+                        </div>
+                        <div class="ControlesMatriculaServicioAprobado">
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: #9ccc65;text-align: center;"><a href="../view/comercial/serviceRequest.html">Ver servicio</a></div>
+                            <div style="width: 98%;height: 50%;font-size: 10px;background: tomato;text-align: center;"><a href="">Eliminar servicio</a></div>
+                        </div>
+                    </div> 
+                    <!-- Fin recuadro servicio --> 
+                    
+                </div>
+                <div class="detalleServicioSolicitadoAprobado"></div>    
+                    
+               </div>         
+
                 <div class="marcoServiciosRequeridosMatricula" id="marcoMisCotizacionesModuloMatricula">
                     
                 </div>    
                 <div class="marcoServiciosRequeridosMatricula" id="marcoNuevoServicioModuloMatricula">
                     
                 </div>    
-                
-                
-                
-                
-                
                     
                 </div>
                 
