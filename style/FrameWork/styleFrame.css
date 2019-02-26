@@ -892,10 +892,6 @@ td{
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     }
-
-
-
-
 }
 
 #rowMovilVisibleLugarRecoleccion{
@@ -909,10 +905,11 @@ td{
     -webkit-border-radius: 5px 5px 5px 5px;
 }
 
-
-
-#rowRegistrarLugarRecoleccionOculta{
- display: flex;   
+.rowRegistrarLugarRecoleccionOculta{
+ display: none;
+ width: 100%;
+ flex-wrap: wrap;
+ cursor: pointer;
     
 }
 

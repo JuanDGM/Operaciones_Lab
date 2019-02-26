@@ -621,7 +621,7 @@
                                 
                             </div>
                             
-                            <div class="rowRegistrarEnLugarRecoleccionMovil">
+                            <div class="rowRegistrarEnLugarRecoleccionMovil" onclick="desplegarInfoLugarRecoleccion(1);">
                                 
                                 <div id="rowMovilVisibleLugarRecoleccion">
                                     <div class="input-field styloInputGeneral">
@@ -636,9 +636,11 @@
                                         <input placeholder="" type="text" class="validate" value="Rio Cauca" disabled />
                                         <label>LUGAR</label>
                                     </div>
-
+                                    
+                                    
                                 </div>
-                                <div id="rowRegistrarLugarRecoleccionOculta">
+
+                                <div class="rowRegistrarLugarRecoleccionOculta" id="displayLugarRecoleccionDetalle1">
                                 
                                     <div class="input-field styloInputGeneral">
                                         <input placeholder="" type="text" class="validate" value="Rio Cauca" disabled />
@@ -646,7 +648,7 @@
                                     </div>
                                     <div class="input-field styloInputGeneral">
                                         <input placeholder="" type="text" class="validate" value="Rio Cauca" disabled />
-                                        <label>RESULTADOS A NOMBRE</label>
+                                        <label>INFORME A NOMBRE</label>
                                     </div>
                                     <div class="input-field styloInputGeneral">
                                         <input placeholder="" type="text" class="validate" value="Rio Cauca" disabled />
@@ -656,6 +658,34 @@
                                         <input placeholder="" type="text" class="validate" value="Rio Cauca" disabled />
                                         <label>TELEFONO</label>
                                     </div>
+                                    
+                                    <div class="input-field" style="width: 90%;margin: auto;">
+                                        <textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+                                        <label>SOLICITUD</label>
+                                    </div>    
+                                    <div class="input-field" style="width: 90%;margin: auto;">
+                                        <textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+                                        <label>OBSERVACIONES</label>
+                                    </div>    
+                                    
+                                    <div class="input-field styloInputGeneral">
+                                        <input placeholder="" type="date" class="validate"/>
+                                        <label>FECHA</label>
+                                    </div>
+                                    <div class="input-field styloInputGeneral">
+                                        <input placeholder="" type="time" class="validate"/>
+                                        <label>HORA</label>
+                                    </div>
+                                    
+                                    <a href="#" class="waves-effect waves-light btn" id="btnregistrarSolicitudRecoleccion">Guardar</a>    
+                                        
+                                    </div>
+                                
+                                    
+                                    
+                                    
+                                </div>
+                                
                                     
                                 
                                 
@@ -668,7 +698,6 @@
                                 <div class="campoLugarRecoleccion"><input type="text"/></div>
                                 <div class="campoLugarRecoleccion"><input type="text"/></div>
                                 </div>
-                            </div>
                             
                         </div>
                         

@@ -131,3 +131,22 @@ function ProgramarHojaRutaRecoleccion(){
     
 }
 
+
+/* Desplegar puntos de recoleccion Vista Movil */
+
+
+function desplegarInfoLugarRecoleccion(i){
+    
+    $(document).ready(function(){
+        
+        var elementoDisplay = "#displayLugarRecoleccionDetalle"+i;
+        var elementoDisplayId = "displayLugarRecoleccionDetalle"+i;
+        
+        if($(elementoDisplay).is(":visible")){
+            document.getElementById(elementoDisplayId).style.display="none";
+        }else{
+            document.getElementById(elementoDisplayId).style.display="flex";
+        }
+    });
+    
+}
