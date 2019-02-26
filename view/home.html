@@ -792,14 +792,44 @@
                 <p style="margin-right: 50%;font-size: 12px;">INFORMACIÓN DEL CLIENTE</p>    
                 <div class="marcoInformacionClienteModuloRecepcion">
                     
-                </div>
+                    <div class="input-field styloInputGeneral">
+                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <label>RAZON SOCIAL</label>
+                    </div>
+                    <div class="input-field styloInputGeneral">
+                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <label>NIT</label>
+                    </div>
+                    <div class="input-field styloInputGeneral">
+                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <label>NOMBRE CONTACTO</label>
+                    </div>
+                    <div class="input-field styloInputGeneral">
+                        <input placeholder="" type="text" class="validate" value="Frisby S.A."/>
+                        <label>TELEFONO</label>
+                    </div>
+                    
+                </div> 
                 <div class="menuNavegacionModulo">
-                    <div class="btnAccesoSubModulo">MIS SERVICIOS</div>
-                    <div class="btnAccesoSubModulo">MIS COTIZACIONES</div>
-                    <div class="btnAccesoSubModulo">NUEVO SERVICIO</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisServiciosMatriculaId" onclick="misServiciosMatricula();">MIS SERVICIOS</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisCotizacionesMatriculaId" onclick="misCotizacionesMatricula();">MIS COTIZACIONES</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloNuevoServicioMatriculaId" onclick="nuevoServicioMatricula();">NUEVO SERVICIO</div>
                 </div>
                     
+                <div class="marcoServiciosRequeridosMatricula" id="marcoMisServiciosModuloMatricula">
                     
+                </div>    
+                <div class="marcoServiciosRequeridosMatricula" id="marcoMisCotizacionesModuloMatricula">
+                    
+                </div>    
+                <div class="marcoServiciosRequeridosMatricula" id="marcoNuevoServicioModuloMatricula">
+                    
+                </div>    
+                
+                
+                
+                
+                
                     
                 </div>
                 
@@ -905,6 +935,7 @@
         <script src="../js/comercial/navegacionComercial.js"></script>
         <script src="../js/Recoleccion/navegacionRecoleccion.js"></script>
         <script src="../js/Recoleccion/desplegarSolicitudRecoleccion.js"></script>
+        <script src="../js/Matricula/navegacionMatricula.js"></script>
         <script>
             
             $(document).ready(function(){
