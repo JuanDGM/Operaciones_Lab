@@ -4,7 +4,6 @@ Los siguientes son los estilos de los marcos principales
 del software, incluyendo los responsive...
 */
 
-
 /* Marco general */
 
 html,body{
@@ -1005,3 +1004,19 @@ td{
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 }
+
+
+/* Funcionalidad MODULO RECEPCION DE MUESTRAS */
+
+.marcoInformacionClienteModuloRecepcion{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    position: flex;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+
