@@ -8,6 +8,7 @@ function menuComercial(){
     document.getElementById('menuComercial').style.display = 'block';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -24,6 +25,7 @@ function menuRecoleccion(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'block';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -40,6 +42,7 @@ function menuMatricula(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'block';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -47,6 +50,24 @@ function menuMatricula(){
     document.getElementById('menuInteligenciaNegocio').style.display = 'none';
     document.getElementById('menuPortalCliente').style.display = 'none';
 }
+
+function alistamiento(){
+    
+    document.getElementById('marcoTitleArticleId').innerHTML = '';
+    document.getElementById('marcoTitleArticleId').innerHTML = 'ALISTAMIENTO DE MUESTRAS';
+    
+    document.getElementById('menuComercial').style.display = 'none';
+    document.getElementById('menuRecoleccion').style.display = 'none';
+    document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'block';
+    document.getElementById('menuAsignacionTrabajo').style.display = 'none';
+    document.getElementById('menuRegistrarAnalisis').style.display = 'none';
+    document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
+    document.getElementById('menuFacturacion').style.display = 'none';
+    document.getElementById('menuInteligenciaNegocio').style.display = 'none';
+    document.getElementById('menuPortalCliente').style.display = 'none';
+}
+
 
 function menuAsignacionTrabajo(){
     
@@ -56,6 +77,7 @@ function menuAsignacionTrabajo(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'block';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -72,6 +94,7 @@ function menuRegistrarAnalisis(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'block';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -88,6 +111,7 @@ function menuAprobarEnviarInforme(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'block';
@@ -104,6 +128,7 @@ function menuFacturacion(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -120,6 +145,7 @@ function menuInteligenciaNegocio(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
@@ -136,6 +162,7 @@ function menuPortalCliente(){
     document.getElementById('menuComercial').style.display = 'none';
     document.getElementById('menuRecoleccion').style.display = 'none';
     document.getElementById('menuMatricula').style.display = 'none';
+    document.getElementById('menuAlistamiento').style.display = 'none';
     document.getElementById('menuAsignacionTrabajo').style.display = 'none';
     document.getElementById('menuRegistrarAnalisis').style.display = 'none';
     document.getElementById('menuAprobarEnviarResultados').style.display = 'none';
