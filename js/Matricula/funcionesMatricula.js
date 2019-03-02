@@ -12,7 +12,7 @@ function mostrarServicioSolicitado(i){
        document.getElementById(MarcoDetalleSolicitadoId).style.display='none'; 
         
     }else{
-       document.getElementById(MarcoDetalleSolicitadoId).style.display='block'; 
+       document.getElementById(MarcoDetalleSolicitadoId).style.display='block';
     }
     
 }

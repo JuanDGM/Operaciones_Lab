@@ -188,7 +188,7 @@ html,body{
     transform: translateX(0%);
     overflow-x:hidden;
     overflow-y:hidden;
-    
+    z-index: 0;
 }
 
 }
@@ -1196,11 +1196,11 @@ td{
     padding: 10px;
     margin-top: 10px;
     margin-left: 10px;
-    border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     display: flex;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
     border-right: 2px solid #757575;
     border-bottom: 2px solid #757575;
 }
@@ -1218,9 +1218,9 @@ td{
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     display: flex;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
     border-right: 2px solid #757575;
     border-bottom: 2px solid #757575;
 }
@@ -1342,6 +1342,7 @@ td{
     border-bottom: 2px solid #757575;
 }
 }
+@media screen AND (max-width:899px){
 .detalleServicioSolicitadoAprobado{
     display: none;
     width: 95%;
@@ -1354,9 +1355,32 @@ td{
     border-radius: 0px 0px 5px 5px;
     -moz-border-radius: 0px 0px 5px 5px;
     -webkit-border-radius: 0px 0px 5px 5px;
-    
+    border-right: 2px solid #757575;
+    border-bottom: 2px solid #757575;
+}
 }
 
+@media screen AND (min-width:900px){
+.detalleServicioSolicitadoAprobado{
+    display: none;
+    width: 98%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    min-height: 100px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    border-right: 2px solid #757575;
+    border-bottom: 2px solid #757575;
+}
+}
+
+.marcoCodigoMuestraMatriculada{
+    
+}
 
 
 
