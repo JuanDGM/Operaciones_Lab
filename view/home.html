@@ -925,7 +925,7 @@
                             
                         </div>
                         <div class="ControlesMatriculaServicioAprobado">
-                            <div class="btnControllerListaSolicitudes" style=""><a href="../view/comercial/serviceRequest.html" style="text-decoration: none;color: #fff;">MOSTRAR</a></div>
+                            <div class="btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);" style="color: #FFF;">MOSTRAR</div>
                             <div class="btnControllerListaSolicitudes" style="background: #FFF;"><a href="#" style="text-decoration: none;color: #222;">CANCELAR</a></div>
                         </div>
                     </div> 
@@ -933,10 +933,212 @@
                     
                     
                 </div>
-                <div class="detalleServicioSolicitadoAprobado"></div>    
+                <div class="detalleServicioSolicitadoAprobado" id="detalleServicioSolicitadoAprobado1">
                     
-               </div>         
+                    <!-- contenido quemado de lo solicitado -->
+                          <div class="etiquetaSubtitulos">ENSAYOS MICROBIOLOGICOS</div> 
+                    
+                    <table class="highlight">
+                        <thead>
+                        <tr>
+                            <td style="width: 37%;">ENSAYO</td>
+                            <td style="width: 35%;">MÉTODO</td>
+                            <td style="width: 23%;">PRECIO</td>
+                            <td style="width: 5%;"></td>
+                        </tr>  
+                        </thead>
+                        <tbody>
+                        <tr>   
+                            <td>Listeria</td>
+                            <td>ISO 34991</td>
+                            <td>$ 45.321.00</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span/></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Salmonella</td>
+                            <td>ISO 16223</td>
+                            <td>$ 84.667.00</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                      <input type="checkbox" class="filled-in" />
+                                      <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>Mohos y levaduras</td>
+                            <td>ISO 34443</td>
+                            <td>$ 32.777.00</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                      <input type="checkbox" class="filled-in" />
+                                      <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>    
+                    </table>
+                    <table class="highlight">
+                        <tbody>
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">TOTAL MICROBIOLOGÍA</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 1.234.000.00</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        </tbody>
+                    </table>
+                    <div class="etiquetaSubtitulos">ENSAYOS FISICOQUÍMICOS</div> 
+                    
+                    
+                    <table class="highlight">
+                        <thead>
+                        <tr>
+                            <td style="width: 37%;">ENSAYO</td>
+                            <td style="width: 35%;">MÉTODO</td>
+                            <td style="width: 23%;">PRECIO</td>
+                            <td style="width: 5%;"></td>
+                        </tr>  
+                        </thead>
+                        <tbody>
+                        <tr>    
+                            <td>Proteina</td>
+                            <td>AOAC 334.32</td>
+                            <td>$ 105.900</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                      <input type="checkbox" class="filled-in" />
+                                      <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>Vitamina A</td>
+                            <td>USP 61</td>
+                            <td>$ 214.222.00</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                      <input type="checkbox" class="filled-in" />
+                                      <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>Vitamina A</td>
+                            <td>ISO 23432</td>
+                            <td>$ 99.890.00</td>
+                            <td>
+                                <p class="marcoCheckBox">
+                                    <label>
+                                      <input type="checkbox" class="filled-in" />
+                                      <span></span>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>    
+                    </table>
+                    <table class="highlight">
+                        <tbody>
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">TOTAL FISICOQUIMICO</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 1.234.000.00</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        </tbody>
+                    </table>
+                    
+                    <div class="etiquetaSubtitulos">OTROS SERVICIOS</div>
+                    
+                    <table class="highlight">
+                        <tbody>
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">RECOLECCION/ TOMA DE MUESTRAS</td>
+                            <td style="width: 35%;">
+                                <div class="switch">
+                                    <label>
+                                      No
+                                      <input type="checkbox">
+                                      <span class="lever"></span>
+                                      Si
+                                    </label>
+                                </div>
+                            </td>
+                            <td style="width: 28%;font-weight: bold;">$ 2.468.000.00</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        </tbody>
+                    </table>
+                    
+                    
+                    
+                    <div class="etiquetaSubtitulos">VALOR TOTAL</div>
+                    
+                    <table class="highlight">
+                        <tbody>
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">SUBTOTAL SERVICIOS A COMPRAR</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 2.468.000.00</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">% DESCUENTO</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">7.6%</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">TOTAL DESCUENTO</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 180.000</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">TOTAL SERVICIOS A COMPRAR</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 2.500.000</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">IVA (19%)</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 500.000</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        <tr>
+                            <td style="width: 37%;font-weight: bold;">TOTAL A PAGAR</td>
+                            <td style="width: 35%;"></td>
+                            <td style="width: 28%;font-weight: bold;">$ 3.000.000</td>
+                            <td style="width: 0%;"></td>
+                        </tr>  
+                        </tbody>
+                    </table>
+                    <br/>
+                    <a href="./quotation.html" class="waves-effect waves-light btn">CREAR OFERTA</a>
+                      
+                    
+                    <!--  / fin contenido quemado de lo solicitado -->
+                
+               </div> <!-- / detalleServicioSolicitadoAprobado -->         
 
+               </div>
                 <div class="marcoServiciosRequeridosMatricula" id="marcoMisCotizacionesModuloMatricula">
                     
                 </div>    
@@ -1049,6 +1251,7 @@
         <script src="../js/Recoleccion/navegacionRecoleccion.js"></script>
         <script src="../js/Recoleccion/desplegarSolicitudRecoleccion.js"></script>
         <script src="../js/Matricula/navegacionMatricula.js"></script>
+        <script src="../js/Matricula/funcionesMatricula.js"></script>
         <script>
             
             $(document).ready(function(){
