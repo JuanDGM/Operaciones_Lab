@@ -20,7 +20,7 @@
                 <div class="headerCentro"></div>
                 <div class="headerDer">
                     <a href="#" data-target="slide-out" class="sidenav-trigger menuHamburguesa"><i class="fas fa-bars iconoHambuguesa"></i></a>
-                    <span class="nombreUsuario"><i class="fas fa-user"></i>&nbsp;JUAN DAVID GARCÍA</span>
+                    <span class="nombreUsuario"><i class="fas fa-user"></i>&nbsp;JUAN DAVID GARCÍA&nbsp;<a href="../setting/view/home_setting.html"><i class="fas fa-cog" style="cursor: pointer;"></i></a></span>
                 </div>
             </header>
             <div class="nav">
@@ -907,7 +907,7 @@
                 <div style="font-size: 12px;">REGISTRAR SOLICITUD</div>
                 <br/>
                 <div class="menuNavegacionModulo">
-                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisServiciosMatriculaId" onclick="misServiciosMatricula();">ASOCIAR SOLICITUD DEL CLIENTE</div>
+                    <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisServiciosMatriculaId" onclick="misServiciosMatricula();">SOLICITUD APROBADA</div>
                     <div class="btnAccesoSubModulo" id="btnAccesoSubModuloMisCotizacionesMatriculaId" onclick="misCotizacionesMatricula();">APROBAR UNA COTIZACION</div>
                     <div class="btnAccesoSubModulo" id="btnAccesoSubModuloNuevoServicioMatriculaId" onclick="nuevoServicioMatricula();">REGISTRAR NUEVO SERVICIO</div>
                 </div>
@@ -926,8 +926,8 @@
                         </div>
                         <div class="ControlesMatriculaServicioAprobado">
                             <!--<div class="btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);" style="color: #FFF;">MOSTRAR</div> -->
-                            <a href="#" class="waves-effect waves-light btn btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);">MOSTRAR</a>
-                            <a href="#" class="waves-effect waves-ripple btn btnControllerListaSolicitudes" style="background: #fff;color: #222;">CANCELAR</a>
+                            <a href="#" class="waves-effect waves-light btn btnControllerListaSolicitudes" id="btnMostrarId1" onclick="mostrarServicioSolicitado(1);" style="z-index: 0;">MOSTRAR</a>
+                            <a href="#" class="waves-effect waves-ripple btn btnControllerListaSolicitudes" style="background: #fff;color: #222;z-index: 0;">CANCELAR</a>
                             <!-- <div class="btnControllerListaSolicitudes" style="background: #FFF;"><a href="#" style="text-decoration: none;color: #222;">CANCELAR</a></div>-->
                         </div>
                     </div> 

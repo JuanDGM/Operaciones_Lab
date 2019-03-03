@@ -1,0 +1,87 @@
+
+html, body{
+    margin: 0%;
+    height: 100%;
+}
+
+.LimitFrame{
+    background: #f4f4f4;
+}
+
+.header{
+    background: #fff;
+    color: #222;
+}
+
+.subMenuSetting{
+    width: 95%;
+    margin: auto;
+    min-height: 50px;
+    background: #f4f4f4;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    display: none;
+}
+
+.btnsubMenuSetting{
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.btnsubMenuSetting:hover{
+    width: 95%;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    cursor: pointer;
+}
+
+
+@media screen AND (max-width:899px){
+.crearSectorEconomico{
+    display: none;
+    width: 95%;
+    min-height: 200px;
+    background: #fff;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+@media screen AND (min-width:900px){
+.crearSectorEconomico{
+    display: none;
+    width: 70%;
+    min-height: 200px;
+    background: #fff;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+}
+
+.marcoBtnSetting{
+    max-width: 250px;
+    margin: auto;
+}
+
+#tableSectoresEconomicosCreados{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+}
