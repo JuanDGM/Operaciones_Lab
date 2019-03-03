@@ -925,8 +925,10 @@
                             
                         </div>
                         <div class="ControlesMatriculaServicioAprobado">
-                            <div class="btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);" style="color: #FFF;">MOSTRAR</div>
-                            <div class="btnControllerListaSolicitudes" style="background: #FFF;"><a href="#" style="text-decoration: none;color: #222;">CANCELAR</a></div>
+                            <!--<div class="btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);" style="color: #FFF;">MOSTRAR</div> -->
+                            <a href="#" class="waves-effect waves-light btn btnControllerListaSolicitudes" onclick="mostrarServicioSolicitado(1);">MOSTRAR</a>
+                            <a href="#" class="waves-effect waves-ripple btn btnControllerListaSolicitudes" style="background: #fff;color: #222;">CANCELAR</a>
+                            <!-- <div class="btnControllerListaSolicitudes" style="background: #FFF;"><a href="#" style="text-decoration: none;color: #222;">CANCELAR</a></div>-->
                         </div>
                     </div> 
                     <!-- Fin recuadro servicio --> 
@@ -939,7 +941,7 @@
                         <div class="col s12">
                             Código de muestra:
                             <div class="input-field inline">
-                              <input type="email" value="20190302-254" class="validate">
+                              <input type="text" value="20190302-254" class="validate">
                             </div>
                           </div>
                     </div>   
@@ -1073,30 +1075,6 @@
                         </tbody>
                     </table>
                     
-                    <div class="etiquetaSubtitulos">OTROS SERVICIOS</div>
-                    
-                    <table class="highlight">
-                        <tbody>
-                        <tr>
-                            <td style="width: 37%;font-weight: bold;">RECOLECCION/ TOMA DE MUESTRAS</td>
-                            <td style="width: 35%;">
-                                <div class="switch">
-                                    <label>
-                                      No
-                                      <input type="checkbox">
-                                      <span class="lever"></span>
-                                      Si
-                                    </label>
-                                </div>
-                            </td>
-                            <td style="width: 28%;font-weight: bold;">$ 2.468.000.00</td>
-                            <td style="width: 0%;"></td>
-                        </tr>  
-                        </tbody>
-                    </table>
-                    
-                    
-                    
                     <div class="etiquetaSubtitulos">VALOR TOTAL</div>
                     
                     <table class="highlight">
@@ -1140,7 +1118,7 @@
                         </tbody>
                     </table>
                     <br/>
-                    <a href="./quotation.html" class="waves-effect waves-light btn">CREAR OFERTA</a>
+                    <a href="./quotation.html" class="waves-effect waves-light btn">MATRICULAR</a>
                       
                     
                     <!--  / fin contenido quemado de lo solicitado -->
