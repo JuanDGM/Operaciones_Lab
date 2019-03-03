@@ -19,6 +19,22 @@ function submenuMaestrasPortafolio(){
 
 function MostrarcrearSectorEconomico(){
     
-    document.getElementById('crearSectorEconomicoid').style.display='block';
+   document.getElementById('crearSectorEconomicoid').style.display='block';
+   document.getElementById('crearCategoriasMatricesid').style.display='none'; 
+   document.getElementById('crearMatricesid').style.display='none';
+}
+
+function mostrarMarcoCategoriasMatrices(){
+   document.getElementById('crearSectorEconomicoid').style.display='none';
+   document.getElementById('crearCategoriasMatricesid').style.display='block'; 
+   document.getElementById('crearMatricesid').style.display='none'; 
+}
+
+function MostrarMarcoMatrices(){
+    
+   document.getElementById('crearSectorEconomicoid').style.display='none';
+   document.getElementById('crearCategoriasMatricesid').style.display='none';
+   document.getElementById('crearMatricesid').style.display='block';
     
 }
+

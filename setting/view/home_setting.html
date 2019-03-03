@@ -28,11 +28,11 @@
                     
                     
                     <a class="waves-effect waves-light btn button sidenav-close" onclick="">MAESTRAS LABORATORIOS</a>
-                    <a class="waves-effect waves-light btn button sidenav-close" onclick="submenuMaestrasPortafolio();">MAESTRAS PORTAFOLIO</a>
-                    <div class="subMenuSetting" id="subMenuSettingMaestrasPortafolio">
-                        <div class="btnsubMenuSetting" onclick="MostrarcrearSectorEconomico();">Crear sectores economicos</div>
-                        <div class="btnsubMenuSetting">Crear categorias</div>
-                        <div class="btnsubMenuSetting">Crear matrices</div>
+                    <a class="waves-effect waves-light btn button" onclick="submenuMaestrasPortafolio();">MAESTRAS PORTAFOLIO</a>
+                    <div class="subMenuSetting sidenav-close" id="subMenuSettingMaestrasPortafolio">
+                        <div class="btnsubMenuSetting" onclick="MostrarcrearSectorEconomico();mostrarSectorEcomicoCreados();">Crear sectores economicos</div>
+                        <div class="btnsubMenuSetting" onclick="mostrarMarcoCategoriasMatrices();generarListaSectoresEconomicos('selectSectorDesdeCrearCategoria');mostrarCategoriasMatricesCreadas();">Crear categorias</div>
+                        <div class="btnsubMenuSetting" onclick="MostrarMarcoMatrices();generarListaSectoresEconomicos('selectSectorDesdeCrearMatrices');">Crear matrices</div>
                         <div class="btnsubMenuSetting">Crear ensayos</div>
                         
                     </div>
@@ -43,7 +43,10 @@
             </div>
             <article class="article">
             
-                <div class="crearSectorEconomico" id="crearSectorEconomicoid">
+            <!-- MENU MAESTRAS PORTAFOLIO  -->
+            
+            <!-- Display crear sector economico -->    
+            <div class="MarcoCrearMaestras" id="crearSectorEconomicoid">
                 <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear sector economico</div>
                 <br/>
                 <div class="input-field marcoBtnSetting">
@@ -58,6 +61,76 @@
                 <table id="tableSectoresEconomicosCreados"></table>
                 
             </div>
+            <!-- Fin Display crear sector economico -->
+            
+            <!-- Display crear categorias matrices -->    
+            <div class="MarcoCrearMaestras" id="crearCategoriasMatricesid">
+                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear categorias de matrices</div>
+                <br/>
+                <div class="input-field marcoBtnSetting">
+                    <div class="input-field">
+                        <select id="selectSectorDesdeCrearCategoria">
+                            
+                            
+                        </select>
+                          
+                        <label style="margin-left: -15px;">SECTOR ECONOMICO</label>
+                    </div>
+                </div>
+                    <br/>
+                    
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="nombreCategoriaMatrices" type="text" class="validate">
+                    <label>CATEGORIAS MATRICES</label>
+                    <a href="#" class="waves-effect waves-light btn" onclick="crearCategoriaMatrices();">CREAR</a>
+                </div>
+                
+                <br/>
+                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;">2. Categorias creadas</div>
+                <br/>
+                <table id="tableCategoriasCreadas"></table>
+                
+            </div>
+            <!-- Fin Display crear categorias -->
+            
+            <!-- Display crear matrices -->    
+            <div class="MarcoCrearMaestras" id="crearMatricesid">
+                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear de matrices</div>
+                <br/>
+                <div class="input-field marcoBtnSetting">
+                        <select id="selectSectorDesdeCrearMatrices">
+                            
+                        </select>
+                        <label style="margin-left: -15px;">SECTOR ECONOMICO</label>
+                </div>
+                    <br/>
+                    
+                <div class="input-field marcoBtnSetting">
+                    
+                    <select id="selectSectorDesdeCrearCategoria">
+                            
+                            
+                    </select>
+                    <label>CATEGORIAS MATRICES</label>
+                    
+                </div>
+                
+                <br/>
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="nombreCategoriaMatrices" type="text" class="validate">
+                    <label>MATRICES</label>
+                    <a href="#" class="waves-effect waves-light btn" onclick="">CREAR</a>
+                </div>
+                
+                <br/>
+                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;">2. Categorias creadas</div>
+                <br/>
+                <table id="tableCategoriasCreadas"></table>
+                
+            </div>
+            <!-- Fin Display crear matrices -->
+            
+            <!-- FIN MENU MAESTRAS PORTAFOLIO  -->
             
             </article>
             
@@ -66,15 +139,17 @@
         <script src="../../library/materialize/js/materialize.min.js"></script>
         <script src="../js/crearSectorEconomico.js"></script>
         <script src="../js/navegationSetting.js"></script>
+        <script src="../js/ListaSectoresEconomicos.js"></script>
+        <script src="../js/crearCategoriaMatrices.js"></script>
         
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             
+                 $('select').formSelect();
+                 
             });
     
-            mostrarSectorEcomicoCreados();
-            
         </script>
     </body>
 </html>

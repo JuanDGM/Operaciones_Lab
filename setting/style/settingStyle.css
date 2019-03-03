@@ -47,7 +47,7 @@ html, body{
 
 
 @media screen AND (max-width:899px){
-.crearSectorEconomico{
+.MarcoCrearMaestras{
     display: none;
     width: 95%;
     min-height: 200px;
@@ -61,7 +61,7 @@ html, body{
 }
 }
 @media screen AND (min-width:900px){
-.crearSectorEconomico{
+.MarcoCrearMaestras{
     display: none;
     width: 70%;
     min-height: 200px;

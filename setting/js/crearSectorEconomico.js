@@ -19,10 +19,6 @@ function crearSectorEconomico(){
                 
                 alert(response);
         
-                
-        
-        
-        
         });
     });
 }
