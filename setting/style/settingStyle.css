@@ -49,6 +49,7 @@ html, body{
 @media screen AND (max-width:899px){
 .MarcoCrearMaestras{
     display: none;
+    flex-wrap:wrap;
     width: 95%;
     min-height: 200px;
     background: #fff;
@@ -63,7 +64,9 @@ html, body{
 @media screen AND (min-width:900px){
 .MarcoCrearMaestras{
     display: none;
-    width: 70%;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    width: 90%;
     min-height: 200px;
     background: #fff;
     margin: auto;

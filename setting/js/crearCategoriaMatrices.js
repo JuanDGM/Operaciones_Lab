@@ -36,6 +36,8 @@ function mostrarCategoriasMatricesCreadas(){
         url:'../controller/mostrarCategoriasMatricesCreadas.php',
         type:'POST'
     }).done(function(response){
+      
+    $("#tableCategoriasCreadas").empty();
         
         var r = JSON.parse(response);
         

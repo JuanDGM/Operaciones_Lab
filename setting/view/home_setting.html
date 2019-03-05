@@ -32,8 +32,8 @@
                     <div class="subMenuSetting sidenav-close" id="subMenuSettingMaestrasPortafolio">
                         <div class="btnsubMenuSetting" onclick="MostrarcrearSectorEconomico();mostrarSectorEcomicoCreados();">Crear sectores economicos</div>
                         <div class="btnsubMenuSetting" onclick="mostrarMarcoCategoriasMatrices();generarListaSectoresEconomicos('selectSectorDesdeCrearCategoria');mostrarCategoriasMatricesCreadas();">Crear categorias</div>
-                        <div class="btnsubMenuSetting" onclick="MostrarMarcoMatrices();generarListaSectoresEconomicos('selectSectorDesdeCrearMatrices');">Crear matrices</div>
-                        <div class="btnsubMenuSetting">Crear ensayos</div>
+                        <div class="btnsubMenuSetting" onclick="MostrarMarcoMatrices();generarListaSectoresEconomicos('selectSectorDesdeCrearMatrices');selectSectorDesdeCrearMatrices('selectSectorDesdeCrearMatrices','selectCategoriaMatrices');mostrarMatrices();">Crear matrices</div>
+                        <div class="btnsubMenuSetting" onclick="MostrarMarcoMetodos();generarListaSectoresEconomicos('selectSectorDesdeCrearEnsayos');mostrarEnsayosCreados();">Crear ensayos</div>
                         
                     </div>
                     <a class="waves-effect waves-light btn button sidenav-close" onclick="">USUARIOS</a>
@@ -47,7 +47,7 @@
             
             <!-- Display crear sector economico -->    
             <div class="MarcoCrearMaestras" id="crearSectorEconomicoid">
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear sector economico</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;margin-top: 20px;">1. Crear sector economico</div>
                 <br/>
                 <div class="input-field marcoBtnSetting">
                     <input placeholder="" id="nombreSectorEconomico" type="text" class="validate">
@@ -56,7 +56,7 @@
                 </div>
                 
                 <br/>
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;">2. Sectores economico creados</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;">2. Sectores economico creados</div>
                 <br/>
                 <table id="tableSectoresEconomicosCreados"></table>
                 
@@ -65,7 +65,7 @@
             
             <!-- Display crear categorias matrices -->    
             <div class="MarcoCrearMaestras" id="crearCategoriasMatricesid">
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear categorias de matrices</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;margin-top: 20px;">1. Crear categorias de matrices</div>
                 <br/>
                 <div class="input-field marcoBtnSetting">
                     <div class="input-field">
@@ -74,7 +74,7 @@
                             
                         </select>
                           
-                        <label style="margin-left: -15px;">SECTOR ECONOMICO</label>
+                        <label>SECTOR ECONOMICO</label>
                     </div>
                 </div>
                     <br/>
@@ -86,7 +86,7 @@
                 </div>
                 
                 <br/>
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;">2. Categorias creadas</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;">2. Categorias creadas</div>
                 <br/>
                 <table id="tableCategoriasCreadas"></table>
                 
@@ -95,10 +95,10 @@
             
             <!-- Display crear matrices -->    
             <div class="MarcoCrearMaestras" id="crearMatricesid">
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;margin-top: 20px;">1. Crear de matrices</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;margin-top: 20px;">1. Crear de matrices</div>
                 <br/>
                 <div class="input-field marcoBtnSetting">
-                        <select id="selectSectorDesdeCrearMatrices">
+                    <select id="selectSectorDesdeCrearMatrices" onchange="ListaCategoriasMatrices('selectSectorDesdeCrearMatrices','selectSectorDesdeCrearMatrices');">
                             
                         </select>
                         <label style="margin-left: -15px;">SECTOR ECONOMICO</label>
@@ -107,7 +107,7 @@
                     
                 <div class="input-field marcoBtnSetting">
                     
-                    <select id="selectSectorDesdeCrearCategoria">
+                    <select id="selectCategoriaMatrices">
                             
                             
                     </select>
@@ -117,18 +117,93 @@
                 
                 <br/>
                 <div class="input-field marcoBtnSetting">
-                    <input placeholder="" id="nombreCategoriaMatrices" type="text" class="validate">
+                    <input placeholder="" id="nombreMatrices" type="text" class="validate">
                     <label>MATRICES</label>
-                    <a href="#" class="waves-effect waves-light btn" onclick="">CREAR</a>
+                    <a href="#" class="waves-effect waves-light btn" onclick="crearMatrices()">CREAR</a>
                 </div>
                 
                 <br/>
-                <div class="etiquetaSubtitulos" style="width: 95%;margin: auto;">2. Categorias creadas</div>
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;">2. Categorias creadas</div>
                 <br/>
-                <table id="tableCategoriasCreadas"></table>
+                <table id="tableMatricesCreadas"></table>
                 
             </div>
-            <!-- Fin Display crear matrices -->
+            <!-- Fin Display crear metodos -->
+            
+            <!-- Display crear matrices -->    
+            
+            <div class="MarcoCrearMaestras" id="crearMetodosid">
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;margin-top: 20px;margin-bottom: 20px;">1. Crear Ensayos</div>
+                
+                <div class="input-field marcoBtnSetting">
+                    <select id="selectSectorDesdeCrearEnsayos" onchange="ListaCategoriasMatrices('selectSectorDesdeCrearEnsayos','selectCategoriaMatricesDisplayCrearEnsayos')">
+                            
+                        </select>
+                        <label>SECTOR ECONOMICO</label>
+                </div>
+
+                    
+                <div class="input-field marcoBtnSetting">
+                    
+                    <select id="selectCategoriaMatricesDisplayCrearEnsayos" onchange="listarMatrices('selectSectorDesdeCrearEnsayos','selectCategoriaMatricesDisplayCrearEnsayos','selectMatricesDisplayCrearEnsayos');">
+                            
+                            
+                    </select>
+                    <label>CATEGORIAS MATRICES</label>
+                    
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    
+                    <select id="selectMatricesDisplayCrearEnsayos">
+                            
+                            
+                    </select>
+                    <label>MATRICES</label>
+                    
+                </div>
+                
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="nombreEnsayo" type="text" class="validate">
+                    <label>NOMBRE ENSAYO</label>
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="ReferenciaMetodo" type="text" class="validate">
+                    <label>METODO REFERENCIA</label>
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="FechaVigenciaMetodo" type="text" class="validate">
+                    <label>FECHA VIGENCIA METODO</label>
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    <select id="Categoria_Confianza">
+                        <option value="Acreditado">Acreditado</option>   
+                        <option value="Validado/Confirmado">Validado/Confirmado</option>   
+                        <option value="Controles internos">Controles internos</option>   
+                            
+                    </select>
+                    <label>NIVEL DE CONFIANZA</label>
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="IncertidumbreEstimada" type="text" class="validate">
+                    <label>INCERTIDUMBRE</label>
+                </div>
+                <div class="input-field marcoBtnSetting">
+                    <input placeholder="" id="Tiempo_Entrega_Resultado" type="text" class="validate">
+                    <label>TIEMPO ENTREGA RESULTADO</label>
+                </div>
+                
+                <a href="#" class="waves-effect waves-light btn" onclick="crearEnsayos();" style="margin-left: 1%">CREAR</a>
+                
+                <div class="etiquetaSubtitulos" style="width: 99%;margin: auto;margin-bottom: 20px;margin-top: 20px;">2. Ensayos creados</div>
+                
+                <table id="tableEnsayosCreados"></table>
+                
+            </div>
+            <!-- Fin Display crear Metodos -->
+            
+            
+            
+            
             
             <!-- FIN MENU MAESTRAS PORTAFOLIO  -->
             
@@ -141,6 +216,10 @@
         <script src="../js/navegationSetting.js"></script>
         <script src="../js/ListaSectoresEconomicos.js"></script>
         <script src="../js/crearCategoriaMatrices.js"></script>
+        <script src="../../setting/js/ListaCategoriasMatrices.js"></script>
+        <script src="../../setting/js/crearMatrices.js"></script>
+        <script src="../../setting/js/crearEnsayos.js"></script>
+        <script src="../../setting/js/ListaMatrices.js"></script>
         
         <script>
             $(document).ready(function(){

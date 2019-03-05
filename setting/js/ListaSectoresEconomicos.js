@@ -12,6 +12,8 @@ function generarListaSectoresEconomicos(i){
             type:'POST'
         }).done(function(response){
             
+            $(identificadorElemento).empty();
+            
             var r = JSON.parse(response);
             
             for(var i=0;i<r['nombreSector'].length;i++){

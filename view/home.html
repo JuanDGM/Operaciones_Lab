@@ -261,7 +261,7 @@
                 
                     <!-- dropdown1 despliegue accion en boton portafolio consultar/ crear-->
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a onclick="consultarPortafolio();">Consultar</a></li>
+                        <li><a onclick="consultarPortafolio();mostrarPortafolio()">Consultar</a></li>
                         <li><a onclick="crearPortafolio();">Crear</a></li>
                     </ul>
                     
@@ -326,16 +326,33 @@
                                 <li>
                                     <div class="collapsible-header"><i class="fas fa-search"></i>FILTROS CONSULTAR PORTAFOLIO<i class="material-icons"></i></div>
                                     <div class="collapsible-body">
-                                        <div style="display: flex;">
+                                        <div style="display: flex;flex-wrap:wrap;">
                                         <div class="input-field styloInputGeneral">
-                                            <input placeholder="" type="text" class="validate">
-                                            <label for="first_name">MÉTODO</label>
+                                            <select id="sectorId"></select>
+                                            <label>SECTOR</label>
                                         </div>
                                         <div class="input-field styloInputGeneral">
-                                            <input placeholder="" type="text" class="validate">
-                                            <label for="first_name">MÉTODO</label>
+                                            <select id="categoriaMatrizId"></select>
+                                            <label>CATEGORIA MATRIZ</label>
                                         </div>
-                                       </div>  
+                                        <div class="input-field styloInputGeneral">
+                                            <select id="MatrizId"></select>
+                                            <label>MATRIZ</label>
+                                        </div>
+                                        <div class="input-field styloInputGeneral">
+                                            <select id="codigoEnsayoId"></select>
+                                            <label>CODIGO ENSAYO</label>
+                                        </div>
+                                        <div class="input-field styloInputGeneral">
+                                            <select id="EnsayoId"></select>
+                                            <label>ENSAYO</label>
+                                        </div>
+                                        <div class="input-field styloInputGeneral">
+                                            <select id="nivelCalidadId"></select>
+                                            <label>NIVEL CALIDAD</label>
+                                        </div>
+                                       
+                                        </div>  
                                         
                                     </div>
                                 </li>
@@ -345,42 +362,11 @@
                             
                             <!-- PORTAFOLIO  -->
                             
-                            <table class="highlight">
-                                            <thead>
-                                              <tr>
-                                                  <th>NOMBRE ENSAYO</th>
-                                                  <th>MÉTODO</th>
-                                                  <th>TIEMPO ENTREGA</th>
-                                                  <th>NIVEL DE CALIDAD</th>
-                                                  <th>PRECIO</th>
-                                              </tr>
-                                            </thead>
+                            
+                            <div id="contenedorMostrarPortafolio"></div>
+                            
+                            
 
-                                            <tbody>
-                                              <tr>
-                                                <td>Coliformes</td>
-                                                <td>ISO 57281</td>
-                                                <td>3 días</td>
-                                                <td>Acreditado</td>
-                                                <td>$ 23.455</td>
-                                              </tr>
-                                              <tr>
-                                                <td>Salmonela</td>
-                                                <td>ISO 1843</td>
-                                                <td>3 días</td>
-                                                <td>Validado</td>
-                                                <td>$ 45.455</td>
-                                              </tr>
-                                              <tr>
-                                                <td>Listeria</td>
-                                                <td>ISO 57281</td>
-                                                <td>3 días</td>
-                                                <td>Control interno</td>
-                                                <td>$ 23.455</td>
-                                              </tr>
-                                              
-                                            </tbody>
-                                          </table>
                             
                             <!-- FIN PORTAFOLIO -->
                             
@@ -1235,6 +1221,7 @@
         <script src="../library/materialize/js/materialize.min.js"></script>
         <script src="../js/navegacionMenuPrincipal.js"></script>
         <script src="../js/comercial/navegacionComercial.js"></script>
+        <script src="../js/comercial/mostrarPortafolio.js"></script>
         <script src="../js/Recoleccion/navegacionRecoleccion.js"></script>
         <script src="../js/Recoleccion/desplegarSolicitudRecoleccion.js"></script>
         <script src="../js/Matricula/navegacionMatricula.js"></script>

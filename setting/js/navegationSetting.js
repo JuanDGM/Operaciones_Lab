@@ -22,12 +22,14 @@ function MostrarcrearSectorEconomico(){
    document.getElementById('crearSectorEconomicoid').style.display='block';
    document.getElementById('crearCategoriasMatricesid').style.display='none'; 
    document.getElementById('crearMatricesid').style.display='none';
+   document.getElementById('crearMetodosid').style.display='none';
 }
 
 function mostrarMarcoCategoriasMatrices(){
    document.getElementById('crearSectorEconomicoid').style.display='none';
    document.getElementById('crearCategoriasMatricesid').style.display='block'; 
    document.getElementById('crearMatricesid').style.display='none'; 
+   document.getElementById('crearMetodosid').style.display='none';
 }
 
 function MostrarMarcoMatrices(){
@@ -35,6 +37,15 @@ function MostrarMarcoMatrices(){
    document.getElementById('crearSectorEconomicoid').style.display='none';
    document.getElementById('crearCategoriasMatricesid').style.display='none';
    document.getElementById('crearMatricesid').style.display='block';
+   document.getElementById('crearMetodosid').style.display='none'; 
+}
+
+function MostrarMarcoMetodos(){
+    
+   document.getElementById('crearSectorEconomicoid').style.display='none';
+   document.getElementById('crearCategoriasMatricesid').style.display='none';
+   document.getElementById('crearMatricesid').style.display='none';
+   document.getElementById('crearMetodosid').style.display='flex';
     
 }
 

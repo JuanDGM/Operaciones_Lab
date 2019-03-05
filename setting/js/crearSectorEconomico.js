@@ -34,6 +34,8 @@ function mostrarSectorEcomicoCreados(){
         type:'POST'
     }).done(function(response){
         
+       $("#tableSectoresEconomicosCreados").empty(); 
+        
         var r = JSON.parse(response);
         
        $("#tableSectoresEconomicosCreados").append(
